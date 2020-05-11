@@ -1,0 +1,9 @@
+title: Denis Olifer
+layout: _layout
+isHome: true
+---
+@await Html.PartialAsync("blog/_posts.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
+    .Flatten()
+    .FilterSources("blog/posts/*")
+    .OrderByDescending(doc => doc.GetDateTime("Published"))
+    .Take(5))

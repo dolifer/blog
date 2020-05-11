@@ -1,0 +1,56 @@
+﻿@inherits Statiq.Razor.StatiqRazorPage<IEnumerable<IDocument>>
+
+@{
+    var firstPost = Model.First();
+    var list = Model.Skip(1).ToArray();
+}
+
+@if (firstPost != null)
+{
+    <!--Lead Card-->
+    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+        <a href="@Context.GetLink(firstPost).Substring(1)" class="flex flex-wrap no-underline hover:no-underline">
+            @if (firstPost.GetString("Image") != null)
+            {
+                <div class="w-full md:w-2/3 rounded-t">
+                    <img src="@firstPost.GetString("Image")" class="h-full w-full shadow">
+                </div>
+            }
+
+            <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
+                    <div class="font-bold text-xl mb-2">@firstPost.GetString("Title")</div>
+                    <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
+                    <div class="text-gray-700 text-base">
+                        @Html.Raw(firstPost.GetString("Excerpt"))
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--/Lead Card-->
+}
+
+<!--Posts Container-->
+<div class="flex flex-wrap justify-between -mx-6">
+@foreach(var post in list)
+{
+    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg px-6 py-4">
+            <a href="@Context.GetLink(post).Substring(1)" class="flex flex-wrap no-underline hover:no-underline">
+                @if (post.GetString("Image") != null)
+                {
+                    <img src="@post.GetString("Image")" class="h-64 w-full rounded-t pb-6">
+                }
+                <div class="w-full font-bold text-xl text-gray-900">@post.GetString("Title")</div>
+                <p class="w-full text-gray-600 text-xs md:text-sm">Published on @post.GetString("Published")</p>
+                
+                <div class="text-gray-700 text-base">
+                    @Html.Raw(post.GetString("Excerpt"))
+                </div>
+            </a>
+        </div>
+        <meta itemprop="dateModified" content="@post.GetString("Published")">
+    </div>
+}
+</div>

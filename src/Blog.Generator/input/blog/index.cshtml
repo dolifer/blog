@@ -1,0 +1,18 @@
+---
+Title: Blog
+PageTitle: Recent Posts
+layout: _layout
+---
+<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Posts</h1>
+
+<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+@await Html.PartialAsync("_posts.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
+    .Flatten()
+    .FilterSources("blog/posts/*")
+    .OrderByDescending(doc => doc.GetDateTime("Published"))
+    .Take(5))
+</div>
+
+@section head { 
+    <link type="application/rss+xml" rel="alternate" title="Blog" href="/api/rss/" />
+}

@@ -1,7 +1,7 @@
 ---
 Title: Updating Assembly Redirects with NuGet
 Published: 2017-09-20
-Image: /assets/posts/todo_cover.jpg
+Image: /assets/posts/john-lockwood-FcLq69V7Rsc-unsplash.jpg
 ---
 
 This is one of those "note to self" posts. Every time i've got something like this:

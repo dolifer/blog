@@ -1,7 +1,7 @@
 ---
 Title: How do you rename a Git tag?
 Published: 2017-04-19
-Image: /assets/posts/todo_cover.jpg
+Image: /assets/posts/jon-tyson-566CgCRSNCk-unsplash.jpg
 ---
 
 Here is how I rename a tag `old` to `new`:

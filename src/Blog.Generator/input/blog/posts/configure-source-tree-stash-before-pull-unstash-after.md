@@ -1,12 +1,13 @@
 ---
 Title: Configure SourceTree to stash before pull & unstash after merge
 Published: 2017-09-28
-Image: assets/posts/source-tree-dialog.png
+Image: assets/posts/markus-spiske-JT1AI1nKWhg-unsplash.jpg
 ---
 
 [SourceTree](https://www.sourcetreeapp.com/) is my favourite tool for a while i used it when working with Git repositories, as i'm [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) addict and often create branches during my work, and SourceTree helps a lot with this.
 
 But it's a headache to see this message, when i wanna pull a branch while having local changes:
+
 ![](assets/posts/source-tree-dialog.png)
 
 to solve this i must go into shell and type:

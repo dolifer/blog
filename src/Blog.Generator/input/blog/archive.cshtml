@@ -13,7 +13,7 @@ layout: _layout
                         @await Html.PartialAsync("_posts.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
                             .Flatten()
                             .FilterSources("blog/posts/*")
-                            .Where(doc => doc.GetDateTime("Published").ToString("yyyy/MM").Equals(Model.GetString(Keys.Current)))
+                            .Where(doc => doc.GetDateTime("Published").ToString("yyyy-MM").Equals(Model.GetString(Keys.Current)))
                             .OrderByDescending(doc => doc.GetDateTime("Published")))
                     </div>
                     <div class="col-md-3">

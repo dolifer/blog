@@ -1,6 +1,7 @@
-title: Denis Olifer
+Title: => $"{BlogSettings.Title}"
 layout: _layout
 isHome: true
+Section: "/blog"
 ---
 @await Html.PartialAsync("blog/_posts.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
     .Flatten()

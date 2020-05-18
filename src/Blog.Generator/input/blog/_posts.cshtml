@@ -1,5 +1,23 @@
 ﻿@inherits Statiq.Razor.StatiqRazorPage<IEnumerable<IDocument>>
 
+@functions
+{
+    string GetExcerpt(IDocument post)
+    {
+        var excerpt = post.GetString(Statiq.Html.HtmlKeys.Excerpt);
+
+        if (!string.IsNullOrWhiteSpace(excerpt))
+        {
+            excerpt = excerpt.RemoveEnd("</p>"); //remove final '</p>'
+            var words = excerpt.Split().Take(15); //only interested in first 50 words, so add them to array
+            excerpt = string.Join(" ", words); //rejoin the words as single string
+            excerpt += $" ... <span class=\"small\"><a class=\"inline-block text-teal-500 no-underline hover:text-teal-600 hover:underline\" href=\"{Context.GetLink(post)}\">Read more</a></span></p>"; //add it back with some more goodies
+        }
+
+        return excerpt;
+    }
+}
+
 @{
     var firstPost = Model.First();
     var list = Model.Skip(1).ToArray();
@@ -7,9 +25,9 @@
 
 @if (firstPost != null)
 {
+    var excerpt = GetExcerpt(firstPost);
     <!--Lead Card-->
     <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
-        <a href="@Context.GetLink(firstPost).Substring(1)" class="flex flex-wrap no-underline hover:no-underline">
             @if (firstPost.GetString("Image") != null)
             {
                 <div class="w-full md:w-2/3 rounded-t">
@@ -19,38 +37,41 @@
 
             <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
                 <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
-                    <div class="font-bold text-xl mb-2">@firstPost.GetString("Title")</div>
+                    <div class="font-bold text-xl mb-2">
+                        <a itemprop="url" href="@Context.GetLink(firstPost).Substring(1)">@firstPost.GetString("Title")</a>
+                    </div>
                     <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
                     <div class="text-gray-700 text-base">
-                        @Html.Raw(firstPost.GetString("Excerpt"))
+                        @Html.Raw(excerpt)
                     </div>
                 </div>
             </div>
-        </a>
     </div>
     <!--/Lead Card-->
 }
 
 <!--Posts Container-->
 <div class="flex flex-wrap justify-between -mx-6">
-@foreach(var post in list)
-{
-    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg px-6 py-4">
-            <a href="@Context.GetLink(post).Substring(1)" class="flex flex-wrap no-underline hover:no-underline">
+    @foreach(var post in list)
+    {
+        var excerpt = GetExcerpt(post);
+    
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg px-6 py-4">
                 @if (post.GetString("Image") != null)
                 {
                     <img src="@post.GetString("Image")" class="h-64 w-full rounded-t pb-6">
                 }
-                <div class="w-full font-bold text-xl text-gray-900">@post.GetString("Title")</div>
-                <p class="w-full text-gray-600 text-xs md:text-sm">Published on @post.GetString("Published")</p>
-                
-                <div class="text-gray-700 text-base">
-                    @Html.Raw(post.GetString("Excerpt"))
+                <div class="w-full font-bold text-xl text-gray-900">
+                    <a itemprop="url" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
                 </div>
-            </a>
+                <p class="w-full text-gray-600 text-xs md:text-sm">Published on @post.GetString("Published")</p>
+            
+                <div class="text-gray-700 text-base">
+                    @Html.Raw(excerpt)
+                </div>
+            </div>
+            <meta itemprop="dateModified" content="@post.GetString("Published")">
         </div>
-        <meta itemprop="dateModified" content="@post.GetString("Published")">
-    </div>
-}
+    }
 </div>

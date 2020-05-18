@@ -1,0 +1,6 @@
+FeedRss: true
+FeedTitle: => @$"{BlogSettings.Title}"
+FeedLink: => @$"{BlogSettings.Title}/{BlogSettings.BlogPath}/"
+FeedSources: => @$"{BlogSettings.BlogPath}/posts/*"
+FeedOrderKey: Published
+FeedOrderDescending: true

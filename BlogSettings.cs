@@ -5,7 +5,6 @@ namespace Blog.Generator
     public class BlogSettings
     {
         public static string BaseRef { get; set; } = GetSetting(nameof(BaseRef));
-        public static string BlogPath = "blog";
         public static string ContactEmail { get; set; } = GetSetting(nameof(ContactEmail));
         public static string ServerUri { get; set; } = GetSetting(nameof(ServerUri));
         public static string Title { get; set; } = GetSetting(nameof(Title));

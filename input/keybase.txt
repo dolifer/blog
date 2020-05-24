@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/denisolifer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://olifer.org
+  * I am denisolifer (https://keybase.io/denisolifer) on keybase.
+  * I have a public key ASDwtv_VALVf3iYBdh6a7168oofrdIG3s9cFamNc3BeAcwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120f0b6ffd500b55fde2601761e9aef5ebca287eb7481b7b3d7056a635cdc1780730a",
+            "host": "keybase.io",
+            "kid": "0120f0b6ffd500b55fde2601761e9aef5ebca287eb7481b7b3d7056a635cdc1780730a",
+            "uid": "65a36e7bcbbd3098cdeda3d969312319",
+            "username": "denisolifer"
+        },
+        "service": {
+            "hostname": "olifer.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1488059898,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1488059876,
+        "hash": "99ea692dc1f5c92bc132a18fb33fdb18c1db64470c58e83d19d4cc3600db50ef13d86d6551c239ba843ea7a8c7c68ca600a0acc90ccc308dd64a7c0a913f43d6",
+        "seqno": 924149
+    },
+    "prev": "93475641fd24c5a232fdd9c5aebf5392f9d22d97d7cc84bfe6b6215778a36220",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8Lb/1QC1X94mAXYemu9evKKH63SBt7PXBWpjXNwXgHMKp3BheWxvYWTFAvZ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZjBiNmZmZDUwMGI1NWZkZTI2MDE3NjFlOWFlZjVlYmNhMjg3ZWI3NDgxYjdiM2Q3MDU2YTYzNWNkYzE3ODA3MzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjBiNmZmZDUwMGI1NWZkZTI2MDE3NjFlOWFlZjVlYmNhMjg3ZWI3NDgxYjdiM2Q3MDU2YTYzNWNkYzE3ODA3MzBhIiwidWlkIjoiNjVhMzZlN2JjYmJkMzA5OGNkZWRhM2Q5NjkzMTIzMTkiLCJ1c2VybmFtZSI6ImRlbmlzb2xpZmVyIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJvbGlmZXIub3JnIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODgwNTk4OTgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4ODA1OTg3NiwiaGFzaCI6Ijk5ZWE2OTJkYzFmNWM5MmJjMTMyYTE4ZmIzM2ZkYjE4YzFkYjY0NDcwYzU4ZTgzZDE5ZDRjYzM2MDBkYjUwZWYxM2Q4NmQ2NTUxYzIzOWJhODQzZWE3YThjN2M2OGNhNjAwYTBhY2M5MGNjYzMwOGRkNjRhN2MwYTkxM2Y0M2Q2Iiwic2Vxbm8iOjkyNDE0OX0sInByZXYiOiI5MzQ3NTY0MWZkMjRjNWEyMzJmZGQ5YzVhZWJmNTM5MmY5ZDIyZDk3ZDdjYzg0YmZlNmI2MjE1Nzc4YTM2MjIwIiwic2Vxbm8iOjEwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQLD4UzG6YThh6H053iWekRthYfZwSFbM2uvtGSkTlOX1bNcpduQf08bTaORHuG34IekwT3HzD9qiv6xXUwmdWACoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCA9uInT4juRxUS66dIGfwYS5l6QFUqKiFjy01iZn7JX6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/denisolifer
+
+==================================================================

@@ -4,9 +4,18 @@
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
 			
         <div class="pl-4">
-            <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="#"> 
-                @BlogSettings.Title
-            </a>
+            @if (IsRootPage())
+            {
+                <span class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
+                    @BlogSettings.Title
+                </span>
+            }
+            else
+            {
+                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
+                    @BlogSettings.Title
+                </a>
+            }
             <p class="text-gray-600">
                 @BlogSettings.Description
             </p>
@@ -36,6 +45,13 @@
 
 @functions
 {
+    bool IsRootPage()
+    {
+        var url = Document.GetLink();
+
+        return url == "/";
+    }
+
     string GetTextClass(string item)
     {
         var url = Document.GetString("Section") ?? Document.GetLink();

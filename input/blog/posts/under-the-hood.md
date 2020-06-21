@@ -25,9 +25,7 @@ The resulting design was inspired by <a class="hover:text-teal-600 no-underline 
 
 <h2 class="font-semibold text-3xl pt-2">Hosting</h2>
 
-I'm using recently introduced <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://docs.microsoft.com/en-us/azure/static-web-apps/">Azure Static Web Apps</a>.
-
-To make blog work for both "www" and root domain i've followed <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://burkeholland.github.io/posts/static-app-root-domain/">this guide<a>.
+I'm using <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
 
 <h2 class="font-semibold text-3xl pt-2">Images</h2>
 

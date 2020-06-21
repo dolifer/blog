@@ -15,7 +15,7 @@ namespace Blog.Generator
                 .AddSetting(Keys.Host, new Uri(BlogSettings.ServerUri).Host)
                 .AddSetting(Keys.LinksUseHttps, true)
                 .AddSetting(WebKeys.MirrorResources, true)
-                .DeployToGitHubPagesBranch("dolifer", "dolifer.github.io", Config.FromSetting<string>("GITHUB_TOKEN"), "master")
+                .DeployToGitHubPagesBranch("dolifer", "blog", Config.FromSetting<string>("GITHUB_TOKEN"), "master")
                 .AddPipelines()
                 .RunAsync();
         }

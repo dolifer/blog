@@ -1,10 +1,17 @@
+@using Blog.Generator.Data
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    var headerLinks = Navigation.GetHeaderLinks(Document);
+    var isRootPage = Document.GetLink() == "/";
+}
+
 <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
     <div id="progress" class="h-1 z-20 top-0" style="background: linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0); --scroll:0%;"></div>
 
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
 			
         <div class="pl-4">
-            @if (IsRootPage())
+            @if (isRootPage)
             {
                 <span class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
                     @BlogSettings.Title
@@ -29,33 +36,11 @@
 
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 md:bg-transparent z-20 bg-gray-100" id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                <li class="mr-3">
-                    <a class="inline-block @(GetTextClass("/blog")) py-2 px-4 no-underline" href="/">Blog</a>
-                </li>
-                <li class="mr-3">
-                    <a class="inline-block @(GetTextClass("/projects")) no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/projects">Projects</a>
-                </li>
-                <li class="mr-3">
-                    <a class="inline-block @(GetTextClass("/about")) no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/about">About</a>
-                </li>
+                @foreach (var link in headerLinks)
+                {
+                    @await Html.PartialAsync("_partials/_headerLink", link)
+                }
             </ul>
         </div>
     </div>
 </nav>
-
-@functions
-{
-    bool IsRootPage()
-    {
-        var url = Document.GetLink();
-
-        return url == "/";
-    }
-
-    string GetTextClass(string item)
-    {
-        var url = Document.GetString("Section") ?? Document.GetLink();
-        
-        return url.StartsWith(item) ? "text-gray-900 font-bold" : "text-gray-600";
-    }
-}

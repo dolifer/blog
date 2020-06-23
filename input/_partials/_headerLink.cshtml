@@ -6,11 +6,11 @@
 <li class="mr-3">
     @if (url == Model.Url)
     {
-        <span class="inline-block py-2 px-4 no-underline">@Model.Name</span>
+        <span class="inline-block hover:text-gray-900 py-2 px-4 no-underline">@Model.Name</span>
     }
     else
     {
-        <a class="inline-block @(GetTextClass(Model.Url)) py-2 px-4 no-underline" href="/">@Model.Name</a>
+        <a class="inline-block @(GetTextClass(Model.Url)) hover:text-gray-900 py-2 px-4 no-underline" href="@Model.Url">@Model.Name</a>
     }
 </li>
 

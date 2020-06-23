@@ -1,16 +1,14 @@
-﻿using Statiq.Common;
-
-namespace Blog.Generator.Models
+﻿namespace Blog.Generator.Models
 {
     public class HeaderLink
     {
-        public IDocument Document { get; }
         public string Url { get; }
         public string Name { get; }
+        public bool IsActive { get; }
 
-        public HeaderLink(IDocument document, string url, string name)
+        public HeaderLink(string documentUrl, string sectionName, string url, string name)
         {
-            Document = document;
+            IsActive = documentUrl.StartsWith(sectionName);
             Url = url;
             Name = name;
         }

@@ -1,25 +1,12 @@
 ﻿@inherits Microsoft.AspNetCore.Mvc.Razor.RazorPage<Blog.Generator.Models.HeaderLink>
-@{
-    var url = Model.Document.GetLink();
-}
 
 <li class="mr-3">
-    @if (url == Model.Url)
+    @if (Model.IsActive)
     {
-        <span class="inline-block hover:text-gray-900 py-2 px-4 no-underline">@Model.Name</span>
+        <span class="inline-block text-gray-900 font-bold py-2 px-4">@Model.Name</span>
     }
     else
     {
-        <a class="inline-block @(GetTextClass(Model.Url)) hover:text-gray-900 py-2 px-4 no-underline" href="@Model.Url">@Model.Name</a>
+        <a class="inline-block text-gray-600 hover:text-gray-900 py-2 px-4 no-underline hover:underline" href="@Model.Url">@Model.Name</a>
     }
 </li>
-
-@functions
-{
-    string GetTextClass(string item)
-    {
-        var url = Model.Document.GetString("Section") ?? Model.Document.GetLink();
-
-        return url.StartsWith(item) ? "text-gray-900 font-bold" : "text-gray-600";
-    }
-}

@@ -8,9 +8,11 @@ namespace Blog.Generator.Data
     {
         public static IEnumerable<HeaderLink> GetHeaderLinks(IDocument document)
         {
-            yield return new HeaderLink(document, "/", "Blog");
-            yield return new HeaderLink(document, "/projects", "Projects");
-            yield return new HeaderLink(document, "/about", "About");
+            var url = document.GetString("Section") ?? document.GetLink();
+
+            yield return new HeaderLink(url, "/blog", "/", "Blog");
+            yield return new HeaderLink(url, "/projects",  "/projects", "Projects");
+            yield return new HeaderLink(url, "/about", "/about", "About");
         }
     }
 }

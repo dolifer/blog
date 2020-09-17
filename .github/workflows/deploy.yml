@@ -12,11 +12,10 @@ jobs:
       - name: Fetch all history for all tags and branches
         run: git fetch --prune --unshallow
       - uses: actions/setup-dotnet@v1
-        env:
-          DOTNET_CLI_TELEMETRY_OPTOUT: true
         with:
           dotnet-version: '3.1.100'
       - name: Run Statiq.Web publish
         run: dotnet run -- deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOTNET_CLI_TELEMETRY_OPTOUT: true

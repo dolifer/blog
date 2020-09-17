@@ -14,6 +14,7 @@ PostSources: blog/posts/*
 LinksUseHttps: true
 MirrorResources: true
 EditLink: => "https://github.com/dolifer/blog/edit/develop/input/" + doc.Source.GetRelativeInputPath()
+GitHubCommit: => "https://github.com/dolifer/blog/commit/" + Blog.Generator.Data.GitVersion.Sha
 GitHubOwner: dolifer
 GitHubName: blog
 GitHubToken: => Config.FromSetting<string>("GITHUB_TOKEN")

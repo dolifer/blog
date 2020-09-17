@@ -1,6 +1,6 @@
 ﻿@functions
 {
-    string GetExcerpt(IDocument post)
+    static string GetExcerpt(IMetadata post)
     {
         var excerpt = post.GetString(Statiq.Html.HtmlKeys.Excerpt);
 
@@ -19,38 +19,38 @@
 @{
     var posts = Document.GetChildren();
 
-    IDocument older = Document.GetDocument(Keys.Next);
-    IDocument newer = Document.GetDocument(Keys.Previous);
+    var older = Document.GetDocument(Keys.Next);
+    var newer = Document.GetDocument(Keys.Previous);
 
     var firstPost = posts.FirstOrDefault();
     var list = posts.Skip(1).ToArray();
-}
 
-@if (firstPost != null)
-{
-    var excerpt = GetExcerpt(firstPost);
-    <!--Lead Card-->
-    <div class="lg:flex md:flex-1 h-full bg-white rounded rounded-b-none shadow-lg">
-        @if (firstPost.GetString("Image") != null)
-        {
-            <div class="md:w-full lg:w-2/3 rounded-t">
-                <img src="@firstPost.GetString("Image")" class="h-full w-full shadow" />
-            </div>
-        }
-
-        <div class="md:w-full lg:w-1/3 lg:flex flex-col flex-grow flex-shrink">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
-                <div class="font-bold text-xl mb-2 truncate">
-                    <a title="@firstPost.GetString("Title")" itemprop="url" href="@Context.GetLink(firstPost)">@firstPost.GetString("Title")</a>
+    if (firstPost != null)
+    {
+        var excerpt = GetExcerpt(firstPost);
+        <!--Lead Card-->
+        <div class="lg:flex md:flex-1 h-full bg-white rounded rounded-b-none shadow-lg">
+            @if (firstPost.GetString("Image") != null)
+            {
+                <div class="md:w-full lg:w-2/3 rounded-t">
+                    <img src="@firstPost.GetString("Image")" class="h-full w-full shadow"/>
                 </div>
-                <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
-                <div class="text-gray-700 text-base">
-                    @Html.Raw(excerpt)
+            }
+
+            <div class="md:w-full lg:w-1/3 lg:flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
+                    <div class="font-bold text-xl mb-2 text-gray-700 truncate">
+                        <a title="@firstPost.GetString("Title")" class="hover:text-gray-900 no-underline hover:underline" itemprop="url" href="@Context.GetLink(firstPost)">@firstPost.GetString("Title")</a>
+                    </div>
+                    <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
+                    <div class="text-gray-700 text-base">
+                        @Html.Raw(excerpt)
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--/Lead Card-->
+        <!--/Lead Card-->
+    }
 }
 
 <!--Posts Container-->
@@ -68,8 +68,8 @@
                     </div>
                 }
                 <div class="md:w-full lg:w-full lg:flex flex-col flex-grow flex-shrink px-6 py-4">
-                    <div class="w-full font-bold text-xl text-gray-900 truncate">
-                        <a itemprop="url" title="@post.GetString("Title")" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
+                    <div class="w-full font-bold text-xl text-gray-700 truncate">
+                        <a itemprop="url" title="@post.GetString("Title")" class="hover:text-gray-900 no-underline hover:underline" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
                     </div>
                     <p class="w-full text-gray-600 text-xs md:text-sm">Published on @post.GetString("Published")</p>
                 
@@ -82,7 +82,6 @@
         </div>
     }
 </div>
-
 @if (older != null || newer != null)
 {
     <div class="w-full flex mb-2 text-teal-500">
@@ -94,7 +93,6 @@
                 </a>
             }
         </div>
-
         <div class="w-1/2">
             @if (older != null)
             {

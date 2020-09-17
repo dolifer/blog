@@ -12,14 +12,14 @@
         }
         
         <div class="text-base md:text-sm text-gray-500 px-4 py-6">
-            Photo by <a href="@imageLink" class="text-base md:text-sm text-teal-500 no-underline hover:underline">@imageAuthor</a>
+            Photo by <a href="@imageLink" class="text-base text-teal-500 md:text-sm hover:text-teal-600 no-underline hover:underline">@imageAuthor</a>
         </div>
     }
 }
 
 <!--Title-->
 <div class="container max-w-4xl mx-auto text-center break-normal mb-5">
-	<p class="text-sm md:text-base text-teal-500 font-bold">- <time datetime="@Model.GetString(" Published")" itemprop="datePublished">@Model.GetDateTime("Published").ToString("dd MMMM yyyy")</time> -</p>
+	<p class="text-sm md:text-base text-gray-500 font-bold">- <time datetime="@Model.GetString("Published")" itemprop="datePublished">@Model.GetDateTime("Published").ToString("dd MMMM yyyy")</time> -</p>
 	<h1 class="font-bold break-normal text-3xl md:text-5xl">@Model.GetString(Keys.Title)</h1>
 </div>
 

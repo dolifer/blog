@@ -1,49 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    @if (Document.ContainsKey(WebKeys.Description))
-    {
-        <meta name="description" content="@Document.GetString(WebKeys.Description)">
-    }
-    @if (Document.ContainsKey(WebKeys.Author))
-    {
-        <meta name="author" content="@Document.GetString(WebKeys.Author)">
-    }
-
-    <title>@Document.GetString("PageTitle")</title>
-
-    @{
-        @foreach (var rssFeed in Outputs["**/*.rss"])
-        {
-            <link type="application/rss+xml" rel="alternate" title="@rssFeed.GetString(WebKeys.Title)" href="@rssFeed.GetLink()"/>
-        }
-        @foreach (var atomFeed in Outputs["**/*.atom"])
-        {
-            <link type="application/atom+xml" rel="alternate" title="@atomFeed.GetString(WebKeys.Title)" href="@atomFeed.GetLink()"/>
-        }
-    }
-
-    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="/img/favicon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-
-    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-
-
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-
-    @await RenderSectionAsync("head", false)
+<title>@Document.GetString("PageTitle")</title>
+@await Html.PartialAsync("_partials/_header")
+@await RenderSectionAsync("head", false)
 </head>
 <body class="bg-gray-100 tracking-wider tracking-normal">
-@await Html.PartialAsync("_partials/_headerNav")
+    @await Html.PartialAsync("_partials/_headerNav")
 
 <!-- Container -->
 <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
@@ -53,22 +16,21 @@
 <!-- Footer -->
 @await Html.PartialAsync("_partials/_footer")
 <!-- Footer End -->
-
 @{
     var analytics = Document.GetString("GoogleAnalytics");
 }
 
 @if (!string.IsNullOrEmpty(analytics))
 {
-    <!-- GoogleAnalytics -->
-    <script type="text/plain" async src="https://www.googletagmanager.com/gtag/js?id=@analytics" crossorigin="anonymous" data-no-mirror=data-no-mirror></script>
-    <script type="text/plain">
+<!-- GoogleAnalytics -->
+<script type="text/plain" async src="https://www.googletagmanager.com/gtag/js?id=@analytics" crossorigin="anonymous" data-no-mirror=data-no-mirror></script>
+<script type="text/plain">
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '@analytics');
 </script>
-    <!-- end of GoogleAnalytics-->
+<!-- end of GoogleAnalytics-->
 }
 
 <script>

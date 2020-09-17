@@ -1,10 +1,14 @@
-Title: => $"{BlogSettings.Title}"
-layout: _layout
+layout: _Layout
 isHome: true
 Section: "/blog"
+
+ArchiveSources: "blog/posts/*"
+ArchiveDestination: >
+  => GetInt("Index") <= 1 ? $"index.html" : $"archive/{GetInt("Index")}.html"
+ArchivePageSize: 3
+ArchiveOrderKey: Published
+ArchiveOrderDescending: true
+ArchiveTitle: => GetString("Title")
+NoChildPages: true
 ---
-@await Html.PartialAsync("blog/_posts.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
-    .Flatten()
-    .FilterSources("blog/posts/*")
-    .OrderByDescending(doc => doc.GetDateTime("Published"))
-    .Take(5))
+@await Html.PartialAsync("blog/_posts.cshtml", Document)

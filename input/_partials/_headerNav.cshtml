@@ -3,6 +3,8 @@
 @{
     var headerLinks = Navigation.GetHeaderLinks(Document);
     var isRootPage = Document.GetLink() == "/";
+    var title = Document.GetString("SiteTitle");
+    var description = Document.GetString("Description");
 }
 
 <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
@@ -14,17 +16,17 @@
             @if (isRootPage)
             {
                 <span class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
-                    @BlogSettings.Title
+                    @title
                 </span>
             }
             else
             {
                 <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
-                    @BlogSettings.Title
+                   @title
                 </a>
             }
             <p class="text-gray-600">
-                @BlogSettings.Description
+                @description
             </p>
         </div>
 

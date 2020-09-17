@@ -1,7 +1,7 @@
 ---
 Title: Configure SourceTree to stash before pull & unstash after merge
 Published: 2017-09-28
-Image: assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg
+Image: /assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg
 
 ImageAuthor: Yancy Min
 ImageLink: https://unsplash.com/photos/842ofHC6MaI
@@ -13,7 +13,7 @@ As i'm <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline"
 
 But it's a headache to see this message, when i wanna pull a branch while having local changes:
 
-![](assets/posts/source-tree-dialog.png)
+![](/assets/posts/source-tree-dialog.png)
 
 to solve this i must go into shell and type:
 
@@ -24,7 +24,7 @@ git stash pop
 </pre>
 Also we can pack this into Custom Action and use from context menu:
 
-![](assets/posts/source-tree-custom-actions.png)
+![](/assets/posts/source-tree-custom-actions.png)
 
 Another way is to use a feature that is supported natively by Git since <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://developer.atlassian.com/blog/2016/01/git-2.7-release">v2.7.0</a>. 
 

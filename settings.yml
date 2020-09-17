@@ -1,0 +1,21 @@
+﻿Host: olifer.org
+Author: Denis Olifer
+Email: denis@olifer.org
+SiteTitle: Denis Olifer
+Description: Thoughts, stories and ideas.
+PageTitle: |
+  =>
+  {
+    string siteTitle = Context.GetString("SiteTitle");
+    string title = GetString("Title");
+    return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
+  }
+PostSources: blog/posts/*
+LinksUseHttps: true
+MirrorResources: true
+EditLink: => "https://github.com/dolifer/blog/edit/develop/input/" + doc.Source.GetRelativeInputPath()
+GitHubOwner: dolifer
+GitHubName: blog
+GitHubToken: => Config.FromSetting<string>("GITHUB_TOKEN")
+GitHubBranch: master
+GoogleAnalytics: UA-21927702-3

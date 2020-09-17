@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Statiq.App;
-using Statiq.Common;
 using Statiq.Web;
 
 namespace Blog.Generator
@@ -12,11 +10,6 @@ namespace Blog.Generator
         {
             return await Bootstrapper.Factory
                 .CreateWeb(args)
-                .AddSetting(Keys.Host, new Uri(BlogSettings.ServerUri).Host)
-                .AddSetting(Keys.LinksUseHttps, true)
-                .AddSetting(WebKeys.MirrorResources, true)
-                .DeployToGitHubPagesBranch("dolifer", "blog", Config.FromSetting<string>("GITHUB_TOKEN"), "master")
-                .AddPipelines()
                 .RunAsync();
         }
     }

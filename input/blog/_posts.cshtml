@@ -1,6 +1,4 @@
-﻿@inherits Statiq.Razor.StatiqRazorPage<IEnumerable<IDocument>>
-
-@functions
+﻿@functions
 {
     string GetExcerpt(IDocument post)
     {
@@ -11,7 +9,7 @@
             excerpt = excerpt.RemoveEnd("</p>"); //remove final '</p>'
             var words = excerpt.Split().Take(15); //only interested in first 50 words, so add them to array
             excerpt = string.Join(" ", words); //rejoin the words as single string
-            excerpt += $" ... <span class=\"small\"><a class=\"inline-block text-teal-500 no-underline hover:text-teal-600 hover:underline\" href=\"{Context.GetLink(post)}\">Read more</a></span></p>"; //add it back with some more goodies
+            excerpt += $" ...</p>"; //add it back with some more goodies
         }
 
         return excerpt;
@@ -19,15 +17,20 @@
 }
 
 @{
-    var firstPost = Model.First();
-    var list = Model.Skip(1).ToArray();
+    var posts = Document.GetChildren();
+
+    IDocument older = Document.GetDocument(Keys.Next);
+    IDocument newer = Document.GetDocument(Keys.Previous);
+
+    var firstPost = posts.FirstOrDefault();
+    var list = posts.Skip(1).ToArray();
 }
 
 @if (firstPost != null)
 {
     var excerpt = GetExcerpt(firstPost);
     <!--Lead Card-->
-    <div class="lg:flex md:flex-1 h-full bg-white rounded overflow-hidden shadow-lg">
+    <div class="lg:flex md:flex-1 h-full bg-white rounded rounded-b-none shadow-lg">
         @if (firstPost.GetString("Image") != null)
         {
             <div class="md:w-full lg:w-2/3 rounded-t">
@@ -38,7 +41,7 @@
         <div class="md:w-full lg:w-1/3 lg:flex flex-col flex-grow flex-shrink">
             <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
                 <div class="font-bold text-xl mb-2 truncate">
-                    <a itemprop="url" href="@Context.GetLink(firstPost).Substring(1)">@firstPost.GetString("Title")</a>
+                    <a title="@firstPost.GetString("Title")" itemprop="url" href="@Context.GetLink(firstPost).Substring(1)">@firstPost.GetString("Title")</a>
                 </div>
                 <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
                 <div class="text-gray-700 text-base">
@@ -51,22 +54,22 @@
 }
 
 <!--Posts Container-->
-<div class="md:flex flex-wrap justify-between lg:-mx-6 md:-mx-2 overflow-hidden">
+<div class="md:flex flex-wrap justify-start lg:-mx-6 md:-mx-2 overflow-hidden">
     @foreach(var post in list)
     {
         var excerpt = GetExcerpt(post);
     
         <div class="w-full md:w-1/2 lg:w-1/3 lg:p-6 md:p-3 flex flex-col py-4">
-            <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg lg:py-4">
+            <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg">
                 @if (post.GetString("Image") != null)
                 {
                     <div class="md:w-full lg:w-full rounded-t">
-                        <img src="@post.GetString("Image")" class="h-full w-full rounded-t lg:pb-6" />
+                        <img src="@post.GetString("Image")" class="h-full w-full rounded-t" />
                     </div>
                 }
-                <div class="md:w-full lg:w-full lg:flex flex-col flex-grow flex-shrink sm:px-4 sm:py-4">
+                <div class="md:w-full lg:w-full lg:flex flex-col flex-grow flex-shrink px-6 py-4">
                     <div class="w-full font-bold text-xl text-gray-900 truncate">
-                        <a itemprop="url" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
+                        <a itemprop="url" title="@post.GetString("Title")" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
                     </div>
                     <p class="w-full text-gray-600 text-xs md:text-sm">Published on @post.GetString("Published")</p>
                 
@@ -79,3 +82,26 @@
         </div>
     }
 </div>
+
+@if (older != null || newer != null)
+{
+    <div class="w-full flex mb-2">
+        <div class="w-1/2">
+            @if (newer != null)
+            {
+                <a href="@Context.GetLink(newer)" class="text-left p-4 float-left">
+                    <p class="text-lg text-blue-800 font-bold flex items-center"><i class="fas fa-arrow-left pr-1"></i> Newer</p>
+                </a>
+            }
+        </div>
+
+        <div class="w-1/2">
+            @if (older != null)
+            {
+                <a href="@Context.GetLink(older)" class="text-right p-4 float-right">
+                    <p class="text-lg text-blue-800 font-bold flex items-center justify-end">Older <i class="fas fa-arrow-right pl-1"></i></p>
+                </a>
+            }
+        </div>
+    </div>
+}

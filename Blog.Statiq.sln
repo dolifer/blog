@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Generator", "Blog.Generator.csproj", "{2E95830F-1A41-472F-980D-DEC04A0FF323}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Statiq", "Statiq", "{25519AD7-70B4-4660-8237-9E98CB425DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statiq.Web", "Statiq\Statiq.Web\Statiq.Web.csproj", "{DDED8067-0911-4E98-8D27-93C77C4AC027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statiq.Web.Hosting", "Statiq\Statiq.Web.Hosting\Statiq.Web.Hosting.csproj", "{27570AED-CAB3-42D1-8627-28798EC17F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statiq.Web.Azure", "Statiq\Statiq.Web.Azure\Statiq.Web.Azure.csproj", "{09F4CC1F-A6C4-4A59-9BEB-976DFC679296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statiq.Web.GitHub", "Statiq\Statiq.Web.GitHub\Statiq.Web.GitHub.csproj", "{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statiq.Web.Netlify", "Statiq\Statiq.Web.Netlify\Statiq.Web.Netlify.csproj", "{A877001F-DFDF-40FA-B41E-9F6F7CCA9960}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E95830F-1A41-472F-980D-DEC04A0FF323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E95830F-1A41-472F-980D-DEC04A0FF323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E95830F-1A41-472F-980D-DEC04A0FF323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E95830F-1A41-472F-980D-DEC04A0FF323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDED8067-0911-4E98-8D27-93C77C4AC027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDED8067-0911-4E98-8D27-93C77C4AC027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDED8067-0911-4E98-8D27-93C77C4AC027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDED8067-0911-4E98-8D27-93C77C4AC027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27570AED-CAB3-42D1-8627-28798EC17F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27570AED-CAB3-42D1-8627-28798EC17F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27570AED-CAB3-42D1-8627-28798EC17F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27570AED-CAB3-42D1-8627-28798EC17F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F4CC1F-A6C4-4A59-9BEB-976DFC679296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F4CC1F-A6C4-4A59-9BEB-976DFC679296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F4CC1F-A6C4-4A59-9BEB-976DFC679296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F4CC1F-A6C4-4A59-9BEB-976DFC679296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A877001F-DFDF-40FA-B41E-9F6F7CCA9960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A877001F-DFDF-40FA-B41E-9F6F7CCA9960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A877001F-DFDF-40FA-B41E-9F6F7CCA9960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A877001F-DFDF-40FA-B41E-9F6F7CCA9960}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDED8067-0911-4E98-8D27-93C77C4AC027} = {25519AD7-70B4-4660-8237-9E98CB425DA6}
+		{27570AED-CAB3-42D1-8627-28798EC17F0A} = {25519AD7-70B4-4660-8237-9E98CB425DA6}
+		{09F4CC1F-A6C4-4A59-9BEB-976DFC679296} = {25519AD7-70B4-4660-8237-9E98CB425DA6}
+		{6A98C43C-9ED0-40B4-90A0-647F9A31E1E8} = {25519AD7-70B4-4660-8237-9E98CB425DA6}
+		{A877001F-DFDF-40FA-B41E-9F6F7CCA9960} = {25519AD7-70B4-4660-8237-9E98CB425DA6}
+	EndGlobalSection
+EndGlobal

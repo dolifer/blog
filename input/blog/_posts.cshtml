@@ -41,7 +41,7 @@
         <div class="md:w-full lg:w-1/3 lg:flex flex-col flex-grow flex-shrink">
             <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
                 <div class="font-bold text-xl mb-2 truncate">
-                    <a title="@firstPost.GetString("Title")" itemprop="url" href="@Context.GetLink(firstPost).Substring(1)">@firstPost.GetString("Title")</a>
+                    <a title="@firstPost.GetString("Title")" itemprop="url" href="@Context.GetLink(firstPost)">@firstPost.GetString("Title")</a>
                 </div>
                 <p class="w-full text-gray-600 text-xs md:text-sm">Published on @firstPost.GetString("Published")</p>
                 <div class="text-gray-700 text-base">
@@ -64,7 +64,7 @@
                 @if (post.GetString("Image") != null)
                 {
                     <div class="md:w-full lg:w-full rounded-t">
-                        <img src="@post.GetString("Image")" class="h-full w-full rounded-t" />
+                        <img src="@post.GetString("Image")" class="h-64 w-full rounded-t" />
                     </div>
                 }
                 <div class="md:w-full lg:w-full lg:flex flex-col flex-grow flex-shrink px-6 py-4">
@@ -85,12 +85,12 @@
 
 @if (older != null || newer != null)
 {
-    <div class="w-full flex mb-2">
+    <div class="w-full flex mb-2 text-teal-500">
         <div class="w-1/2">
             @if (newer != null)
             {
-                <a href="@Context.GetLink(newer)" class="text-left p-4 float-left">
-                    <p class="text-lg text-blue-800 font-bold flex items-center"><i class="fas fa-arrow-left pr-1"></i> Newer</p>
+                <a href="@Context.GetLink(newer)" class="text-left p-4 float-left hover:text-teal-600">
+                    <p class="text-lg flex items-center"><i class="fas fa-arrow-left pr-1"></i> Newer</p>
                 </a>
             }
         </div>
@@ -98,8 +98,8 @@
         <div class="w-1/2">
             @if (older != null)
             {
-                <a href="@Context.GetLink(older)" class="text-right p-4 float-right">
-                    <p class="text-lg text-blue-800 font-bold flex items-center justify-end">Older <i class="fas fa-arrow-right pl-1"></i></p>
+                <a href="@Context.GetLink(older)" class="text-right p-4 float-right hover:text-teal-600">
+                    <p class="text-lg flex items-center justify-end">Older <i class="fas fa-arrow-right pl-1"></i></p>
                 </a>
             }
         </div>

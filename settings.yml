@@ -18,5 +18,5 @@ GitHubCommit: => "https://github.com/dolifer/blog/commit/" + Blog.Generator.Data
 GitHubOwner: dolifer
 GitHubName: blog
 GitHubToken: => Config.FromSetting<string>("GITHUB_TOKEN")
-GitHubBranch: gh-pages
+GitHubBranch: blog-static
 GoogleAnalytics: UA-21927702-3

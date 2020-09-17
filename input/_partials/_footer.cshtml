@@ -1,3 +1,4 @@
+@using Blog.Generator.Data
 <footer class="bg-white border-t border-gray-400 shadow">
     <div class="container mx-auto flex py-4">
         <div class="w-full mx-auto flex flex-wrap">
@@ -10,6 +11,25 @@
                     <p class="pt-2 text-gray-600">
                         Hosted by <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
                     </p>
+                </div>
+            </div>
+            <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right text-gray-600">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">GitHub</h3>
+                    <ul class="list-reset items-center text-sm pt-2">
+                        <li>
+                             @if (Document.ContainsKey("EditLink"))
+                             {
+                                 <p class="small font-weight-bold"><a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" href="@Document.GetString("EditLink")"><i class="fa fa-edit"></i> Edit This Page</a></p>
+                             }
+                        </li>
+                        <li>
+                            @GitVersion.SemVer
+                        </li>
+                        <li>
+                            @GitVersion.Sha
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

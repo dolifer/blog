@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+	<channel>
+		<title />
+		<link>https://olifer.org/</link>
+		<description>Thoughts, stories and ideas.</description>
+		<copyright>2020</copyright>
+		<managingEditor>Denis Olifer</managingEditor>
+		<pubDate>Thu, 17 Sep 2020 20:06:48 GMT</pubDate>
+		<lastBuildDate>Thu, 17 Sep 2020 20:06:48 GMT</lastBuildDate>
+		<item>
+			<title>Under the hood</title>
+			<link>https://olifer.org/blog/2020-05-24/under-the-hood</link>
+			<description>Thoughts, stories and ideas.</description>
+			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/assets/posts/imattsmart-sm0Bkoj5bnA-unsplash.jpg" length="0" type="image" />
+			<guid>https://olifer.org/blog/2020-05-24/under-the-hood</guid>
+			<pubDate>Sun, 24 May 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Finally i've got my blog up and running. Again :)&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-2"&gt;Building&lt;/h2&gt;
+&lt;p&gt;Thanks to the following projects who currently use &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://statiq.dev/web"&gt;Statiq Web&lt;/a&gt;:&lt;/p&gt;
+&lt;ul class="list-disc px-8"&gt;
+&lt;li&gt; &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://github.com/dotnet-foundation/website"&gt;Net Foundation website&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt;&lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://github.com/statiqdev/statiqdev.github.io"&gt;Statiq.dev website&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+&lt;p&gt;Their code was used as a reference for designing this blog.&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-2"&gt;Theme&lt;/h2&gt;
+&lt;p&gt;The resulting design was inspired by &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.tailwindtoolbox.com/templates/minimal-blog"&gt;Minimal Blog&lt;/a&gt; template, with addition of some components from &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://tailwindcss.com"&gt;Tailwind CSS&lt;/a&gt; itself.&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-2"&gt;Hosting&lt;/h2&gt;
+&lt;p&gt;I'm using &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-2"&gt;Images&lt;/h2&gt;
+&lt;p&gt;Like the blog posts cover images? Find one for yourself on &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://unsplash.com"&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
+&lt;p class="pt-5"&gt;
+You can find the source code of this blog on &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://github.com/dolifer/blog"&gt;GitHub&lt;/a&gt;.
+&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>// TODO: create a blog</title>
+			<link>https://olifer.org/blog/2020-01-09/todo-create-a-blog</link>
+			<description>Thoughts, stories and ideas.</description>
+			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/assets/posts/todo_cover.jpg" length="0" type="image" />
+			<guid>https://olifer.org/blog/2020-01-09/todo-create-a-blog</guid>
+			<pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Will try to make a 2020 a year, when i finally start my blog.&lt;/p&gt;
+&lt;p&gt;I'm going to share my thoughts about C#, .NET and various IT stuff.&lt;/p&gt;
+&lt;p&gt;Follow me for updates!&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Configure SourceTree to stash before pull &amp; unstash after merge</title>
+			<link>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</link>
+			<description>Thoughts, stories and ideas.</description>
+			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg" length="0" type="image" />
+			<guid>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</guid>
+			<pubDate>Thu, 28 Sep 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;&lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.sourcetreeapp.com/"&gt;SourceTree&lt;/a&gt; is my favourite tool for a while i used it when working with Git repositories.&lt;/p&gt;
+&lt;p&gt;As i'm &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"&gt;GitFlow&lt;/a&gt; addict and often create feature and release branches during my work, and SourceTree helps a lot with this.&lt;/p&gt;
+&lt;p&gt;But it's a headache to see this message, when i wanna pull a branch while having local changes:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://olifer.org/assets/posts/source-tree-dialog.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;to solve this i must go into shell and type:&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;git stash
+git pull --rebase
+git stash pop
+&lt;/pre&gt;
+&lt;p&gt;Also we can pack this into Custom Action and use from context menu:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://olifer.org/assets/posts/source-tree-custom-actions.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Another way is to use a feature that is supported natively by Git since &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://developer.atlassian.com/blog/2016/01/git-2.7-release"&gt;v2.7.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All you need to do is set the following global config flag:&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;git config --global rebase.autostash true
+&lt;/pre&gt;
+&lt;p&gt;And now we no longer dependent on SourceTree to have this feature.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Updating Assembly Redirects with NuGet</title>
+			<link>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</link>
+			<description>Thoughts, stories and ideas.</description>
+			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/assets/posts/john-lockwood-FcLq69V7Rsc-unsplash.jpg" length="0" type="image" />
+			<guid>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</guid>
+			<pubDate>Wed, 20 Sep 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is one of those "note to self" posts. Every time i've got something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://olifer.org/assets/posts/vs-redirect-warning.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;I'm telling NuGet to explicitly re-write assembly redirects in project &lt;code&gt;.config&lt;/code&gt; file based on the installed NuGet packages:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://olifer.org/assets/posts/vs-add-binding-redirect.png" alt=""&gt;&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;PM&amp;gt; Add-BindingRedirect
+&lt;/pre&gt;
+&lt;p&gt;But not everyone knows that we can do this for &lt;em&gt;all projects&lt;/em&gt; in solution:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://olifer.org/assets/posts/vs-add-binding-redirect-all-projects.png" alt=""&gt;&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;PM&amp;gt; Get-Project –All | Add-BindingRedirect
+&lt;/pre&gt;
+&lt;p&gt;NuGet will get all projects and for every project, add the correct assembly binding redirects again. Compile, run, and continue your day without rage.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>How do you rename a Git tag?</title>
+			<link>https://olifer.org/blog/2017-04-19/git-tag-rename</link>
+			<description>Thoughts, stories and ideas.</description>
+			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" length="0" type="image" />
+			<guid>https://olifer.org/blog/2017-04-19/git-tag-rename</guid>
+			<pubDate>Wed, 19 Apr 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Here is how I rename a tag &lt;code&gt;old&lt;/code&gt; to &lt;code&gt;new&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;
+git tag new old
+git tag -d old
+git push origin :refs/tags/old
+git push --tags
+&lt;/pre&gt;
+&lt;p&gt;The colon in the push command removes the tag from the remote repository. If you don't do this, git will create the old tag on your machine when you pull.&lt;/p&gt;
+&lt;p&gt;Finally, make sure that the other users remove the deleted tag.&lt;/p&gt;
+&lt;p&gt;Please tell them(co-workers) to run the following command:&lt;/p&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;
+git pull --prune --tags
+&lt;/pre&gt;
+&lt;p&gt;Source &lt;a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="http://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+	</channel>
+</rss>

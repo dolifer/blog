@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html><html lang="en-US"><head>
+<title>Denis Olifer - Configure SourceTree to stash before pull &amp; unstash after merge</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Thoughts, stories and ideas.">
+<meta name="author" content="Denis Olifer">
+<!-- Feeds -->
+<link type="application/rss+xml" rel="alternate" href="/feed.rss">
+<link type="application/atom+xml" rel="alternate" href="/feed.atom">
+<!-- Favicons -->
+<link rel="alternate icon" class="js-site-favicon" type="image/png" href="/img/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<!-- Tailwind -->
+<link href="/mirror/unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="/mirror/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+</head>
+<body class="bg-gray-100 tracking-wider tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
+    <div id="progress" class="h-1 z-20 top-0" style="background: linear-gradient(to right, #38b2ac var(--scroll), transparent 0); --scroll:0%;"></div>
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+        <div class="pl-4">
+                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
+                    Denis Olifer
+                </a>
+            <p class="text-gray-500">
+                Thoughts, stories and ideas.
+            </p>
+        </div>
+
+        <div class="block lg:hidden pr-4">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-600 hover:text-gray-900 hover:border-gray-800 appearance-none focus:outline-none">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+            </button>
+        </div>
+
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 md:bg-transparent z-20 bg-gray-100" id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <li class="mr-3">
+                    <span class="inline-block text-gray-900 font-bold py-2 px-4">Blog</span>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-gray-700 hover:text-gray-900 py-2 px-4 no-underline hover:underline" href="/projects">Projects</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-gray-700 hover:text-gray-900 py-2 px-4 no-underline hover:underline" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Container -->
+<div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
+    
+<!--Title-->
+<div class="container max-w-4xl mx-auto text-center break-normal mb-5">
+	<p class="text-sm md:text-base text-gray-500 font-bold">- <time datetime="9/28/2017" itemprop="datePublished">28 September 2017</time> -</p>
+	<h1 class="font-bold break-normal text-3xl md:text-5xl">Configure SourceTree to stash before pull &amp; unstash after merge</h1>
+</div>
+
+    <!--image-->
+    <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('/assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg'); height: 75vh;"></div>
+
+<!--Container-->    
+<div class="bg-white container max-w-5xl mx-auto -mt-32 mb-10 rounded shadow-md">
+    <div class="mx-0 sm:mx-6">
+        <div class="bg-white w-full p-8 text-xl md:text-2xl text-gray-800 leading-normal">
+            <!--Post Content-->
+            <p><a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.sourcetreeapp.com/">SourceTree</a> is my favourite tool for a while i used it when working with Git repositories.</p>
+<p>As i'm <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GitFlow</a> addict and often create feature and release branches during my work, and SourceTree helps a lot with this.</p>
+<p>But it's a headache to see this message, when i wanna pull a branch while having local changes:</p>
+<p><img src="/assets/posts/source-tree-dialog.png" alt=""></p>
+<p>to solve this i must go into shell and type:</p>
+<pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2">git stash
+git pull --rebase
+git stash pop
+</pre>
+<p>Also we can pack this into Custom Action and use from context menu:</p>
+<p><img src="/assets/posts/source-tree-custom-actions.png" alt=""></p>
+<p>Another way is to use a feature that is supported natively by Git since <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://developer.atlassian.com/blog/2016/01/git-2.7-release">v2.7.0</a>.</p>
+<p>All you need to do is set the following global config flag:</p>
+<pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2">git config --global rebase.autostash true
+</pre>
+<p>And now we no longer dependent on SourceTree to have this feature.</p>
+<p>Enjoy!</p>
+
+        </div>
+        <div class="text-base md:text-sm text-gray-500 px-4 py-6">
+            Photo by <a href="https://unsplash.com/photos/842ofHC6MaI" class="text-base text-teal-500 md:text-sm hover:text-teal-600 no-underline hover:underline">Yancy Min</a>
+        </div>
+    </div>
+</div>
+
+<script>
+	/* Progress bar */
+	//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+	var h = document.documentElement,
+		  b = document.body,
+		  st = 'scrollTop',
+		  sh = 'scrollHeight',
+		  progress = document.querySelector('#progress'),
+		  scroll;
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("header");
+	var navcontent = document.getElementById("nav-content");
+
+	document.addEventListener('scroll', function() {
+        /*Refresh scroll % width*/
+        scroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+        progress.style.setProperty('--scroll', scroll + '%');
+    
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+    
+        if(scrollpos > 10){
+          header.classList.add("bg-white");
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        }
+        else {
+          header.classList.remove("bg-white");
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+	});
+</script>
+</div>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-400 shadow text-gray-500">
+    <div class="container mx-auto flex py-4">
+        <div class="w-full mx-auto flex flex-wrap">
+            <div class="flex w-full lg:w-1/2 ">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">© 2020 Denis Olifer</h3>
+                    <ul class="list-reset items-center text-sm pt-2">
+                    <li>
+                        Generated by <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://statiq.dev/web">Statiq Web</a>.
+                    </li>
+                    <li>
+                        Hosted by <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
+                <div class="px-8">
+                    <ul class="list-reset items-center text-sm pt-2">
+                        <li>2.0.4</li>
+                        <li>
+                            <p class="small"><a class="no-underline text-teal-500 hover:text-teal-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/blog/posts/configure-source-tree-stash-before-pull-unstash-after.md"><i class="fa fa-edit"></i> Edit This Page</a></p>
+                        </li>
+                        <li>
+                            <p class="small"><a class="no-underline text-teal-500 hover:text-teal-600 hover:underline" href="https://github.com/dolifer/blog/commit/a16be9c295bf528a9b27bc2f5415ba0ce634e60e">a16be9c295bf528a9b27bc2f5415ba0ce634e60e</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- GoogleAnalytics -->
+<script type="text/plain" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-21927702-3" crossorigin="anonymous" data-no-mirror="data-no-mirror"></script>
+<script type="text/plain">
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-21927702-3');
+</script>
+<!-- end of GoogleAnalytics-->
+
+<script>
+//Javascript to toggle the menu
+document.getElementById('nav-toggle').onclick = function(){
+    document.getElementById("nav-content").classList.toggle("hidden");
+}
+</script>
+
+</body></html>

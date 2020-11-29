@@ -26,5 +26,5 @@ Please tell them(co-workers) to run the following command:
 git pull --prune --tags
 </pre>
 
-Source <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="http://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag">StackOverflow</a>
+Source <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="http://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag">StackOverflow</a>
 

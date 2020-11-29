@@ -84,20 +84,24 @@
 </div>
 @if (older != null || newer != null)
 {
-    <div class="w-full flex mb-2 text-teal-500">
+    <div class="w-full flex mb-2 text-blue-500">
         <div class="w-1/2">
             @if (newer != null)
             {
-                <a href="@Context.GetLink(newer)" class="text-left p-4 float-left hover:text-teal-600">
-                    <p class="text-lg flex items-center"><i class="fas fa-arrow-left pr-1"></i> Newer</p>
+                <a href="@Context.GetLink(newer)" class="text-left p-4 float-left hover:text-blue-600">
+                    <p class="text-lg flex items-center"><svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                                         </svg> Newer</p>
                 </a>
             }
         </div>
         <div class="w-1/2">
             @if (older != null)
             {
-                <a href="@Context.GetLink(older)" class="text-right p-4 float-right hover:text-teal-600">
-                    <p class="text-lg flex items-center justify-end">Older <i class="fas fa-arrow-right pl-1"></i></p>
+                <a href="@Context.GetLink(older)" class="text-right p-4 float-right hover:text-blue-600">
+                    <p class="text-lg flex items-center justify-end">Older <svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                                                           </svg></p>
                 </a>
             }
         </div>

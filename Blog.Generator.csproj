@@ -19,10 +19,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="GitVersionTask" Version="5.3.7">
+      <PackageReference Include="GitVersionTask" Version="5.5.1">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <PackageReference Include="Statiq.Web" Version="1.0.0-beta.5" />
+      <PackageReference Include="Statiq.Web" Version="1.0.0-beta.14" />
     </ItemGroup>
 </Project>

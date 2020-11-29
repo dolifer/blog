@@ -7,9 +7,9 @@ ImageAuthor: Yancy Min
 ImageLink: https://unsplash.com/photos/842ofHC6MaI
 ---
 
-<a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.sourcetreeapp.com/">SourceTree</a> is my favourite tool for a while i used it when working with Git repositories.
+<a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://www.sourcetreeapp.com/">SourceTree</a> is my favourite tool for a while i used it when working with Git repositories.
  
-As i'm <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GitFlow</a> addict and often create feature and release branches during my work, and SourceTree helps a lot with this.
+As i'm <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GitFlow</a> addict and often create feature and release branches during my work, and SourceTree helps a lot with this.
 
 But it's a headache to see this message, when i wanna pull a branch while having local changes:
 
@@ -26,7 +26,7 @@ Also we can pack this into Custom Action and use from context menu:
 
 ![](/assets/posts/source-tree-custom-actions.png)
 
-Another way is to use a feature that is supported natively by Git since <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://developer.atlassian.com/blog/2016/01/git-2.7-release">v2.7.0</a>. 
+Another way is to use a feature that is supported natively by Git since <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://developer.atlassian.com/blog/2016/01/git-2.7-release">v2.7.0</a>. 
 
 All you need to do is set the following global config flag:
 

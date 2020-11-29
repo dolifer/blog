@@ -14,6 +14,7 @@ namespace Blog.Generator.Data
         }
 
         public static object SemVer => GetField("FullSemVer");
+        public static string PrefixSemVer => $"v{SemVer}";
         public static object Sha => GetField("Sha");
 
         private static object GetField(string name) => _gitVersionInformationType.GetField(name)?.GetValue(null);

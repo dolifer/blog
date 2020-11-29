@@ -1,25 +1,25 @@
-﻿<!DOCTYPE html><html lang="en-US"><head>
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
 <title>Denis Olifer - About</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Thoughts, stories and ideas.">
 <meta name="author" content="Denis Olifer">
 <!-- Feeds -->
-<link type="application/rss+xml" rel="alternate" href="/feed.rss">
-<link type="application/atom+xml" rel="alternate" href="/feed.atom">
+<link type="application/rss+xml" rel="alternate" href="/feed.rss"/>
+<link type="application/atom+xml" rel="alternate" href="/feed.atom"/>
 <!-- Favicons -->
 <link rel="alternate icon" class="js-site-favicon" type="image/png" href="/img/favicon/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
 <!-- Tailwind -->
-<link href="/mirror/unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-<!-- Font Awesome -->
-<script src="/mirror/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<link href="/css/tailwind.min.css" rel="stylesheet">
 
 </head>
-<body class="bg-gray-100 tracking-wider tracking-normal">
+<body class="bg-gray-100 tracking-wider tracking-normal flex flex-col min-h-screen">
     <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
     <div id="progress" class="h-1 z-20 top-0" style="background: linear-gradient(to right, #38b2ac var(--scroll), transparent 0); --scroll:0%;"></div>
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
@@ -55,7 +55,7 @@
 </nav>
 
 <!-- Container -->
-<div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
+<div class="container w-full flex-grow mx-auto px-2 pt-8 lg:pt-16 mt-16">
     <div class="max-w-4xl flex items-center flex-wrap mx-auto my-16">
     <!--Main Col-->
     <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
@@ -72,27 +72,27 @@
                 I would love it if you follow me on the social networks listed below.
             </p>
             <p class="pt-4 text-sm">
-                P.S: Or you even can send an old-school email to <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" href="mailto:denis@olifer.org">denis@olifer.org</a> ;)
+                P.S: Or you even can send an old-school email to <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" href="mailto:denis@olifer.org">denis@olifer.org</a> ;)
             </p>
             <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                <a class="link" href="https://twitter.com/d_olifer">
+                <a class="link" href="https://twitter.com/d_olifer" target="_blank">
                     <svg class="h-6 fill-current text-gray-600 hover:text-blue-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                        <title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
                     </svg>
                 </a>
-                <a class="link" href="https://github.com/dolifer">
+                <a class="link" href="https://github.com/dolifer" target="_blank">
                     <svg class="h-6 fill-current text-gray-600 hover:text-gray-900" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        <title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                     </svg>
                 </a>
-                <a class="link" href="https://www.facebook.com/DenisOlifer">
+                <a class="link" href="https://www.facebook.com/DenisOlifer" target="_blank">
                     <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
+                        <title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/>
                     </svg>
                 </a>
-                <a class="link" href="https://www.youtube.com/c/DenisOlifer">
+                <a class="link" href="https://www.youtube.com/c/DenisOlifer" target="_blank">
                     <svg class="h-6 fill-current text-gray-600 hover:text-red-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+                        <title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
                     </svg>
                 </a>
             </div>
@@ -112,13 +112,13 @@
         <div class="w-full mx-auto flex flex-wrap">
             <div class="flex w-full lg:w-1/2 ">
                 <div class="px-8">
-                    <h3 class="font-bold text-gray-900">© 2020 Denis Olifer</h3>
+                    <h3 class="font-bold text-gray-900">&copy; 2020 Denis Olifer</h3>
                     <ul class="list-reset items-center text-sm pt-2">
                     <li>
-                        Generated by <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://statiq.dev/web">Statiq Web</a>.
+                        Generated by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://statiq.dev/web">Statiq Web</a>.
                     </li>
                     <li>
-                        Hosted by <a class="hover:text-teal-600 no-underline text-teal-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
+                        Hosted by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
                     </li>
                     </ul>
                 </div>
@@ -126,12 +126,16 @@
             <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
                 <div class="px-8">
                     <ul class="list-reset items-center text-sm pt-2">
-                        <li>1.0.5</li>
+                        <li>1.0.6</li>
                         <li>
-                            <p class="small"><a class="no-underline text-teal-500 hover:text-teal-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/about/index.cshtml"><i class="fa fa-edit"></i> Edit This Page</a></p>
+                            <p class="small"><a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/about/index.cshtml">
+                                <svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                                </svg> Edit This Page
+                            </a></p>
                         </li>
                         <li>
-                            <p class="small"><a class="no-underline text-teal-500 hover:text-teal-600 hover:underline" href="https://github.com/dolifer/blog/commit/356a13b19dd9c02b7818e1283d093d4ff3db7953">356a13b19dd9c02b7818e1283d093d4ff3db7953</a></p>
+                            <p class="small"><a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/commit/5b95ab8ed0e258ac0f5a3c7baecf3d8a07ae1c74">5b95ab8ed0e258ac0f5a3c7baecf3d8a07ae1c74</a></p>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +146,7 @@
 <!-- Footer End -->
 
 <!-- GoogleAnalytics -->
-<script type="text/plain" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-21927702-3" crossorigin="anonymous" data-no-mirror="data-no-mirror"></script>
+<script type="text/plain" async src="https://www.googletagmanager.com/gtag/js?id=UA-21927702-3" crossorigin="anonymous" data-no-mirror=data-no-mirror></script>
 <script type="text/plain">
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -157,5 +161,5 @@ document.getElementById('nav-toggle').onclick = function(){
     document.getElementById("nav-content").classList.toggle("hidden");
 }
 </script>
-
-</body></html>
+</body>
+</html>

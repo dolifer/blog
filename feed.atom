@@ -7,7 +7,7 @@
 	</author>
 	<link rel="self" href="https://olifer.org/" />
 	<rights>2020</rights>
-	<updated>2020-11-29T09:28:55Z</updated>
+	<updated>2020-11-29T10:19:04Z</updated>
 	<subtitle>Thoughts, stories and ideas.</subtitle>
 	<entry>
 		<id>https://olifer.org/blog/2020-05-24/under-the-hood</id>
@@ -19,22 +19,21 @@
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/imattsmart-sm0Bkoj5bnA-unsplash.jpg" />
 		<updated>2020-05-24T00:00:00Z</updated>
 		<content>&lt;p&gt;Finally i've got my blog up and running. Again :)&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Building&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5"&gt;Building&lt;/h2&gt;
 &lt;p&gt;Thanks to the following projects who currently use &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://statiq.dev/web"&gt;Statiq Web&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="list-disc px-8"&gt;
 &lt;li&gt; &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dotnet-foundation/website"&gt;Net Foundation website&lt;/a&gt;&lt;/li&gt; 
 &lt;li&gt;&lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/statiqdev/statiqdev.github.io"&gt;Statiq.dev website&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 &lt;p&gt;Their code was used as a reference for designing this blog.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Theme&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Theme&lt;/h2&gt;
 &lt;p&gt;The resulting design was inspired by &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://www.tailwindtoolbox.com/templates/minimal-blog"&gt;Minimal Blog&lt;/a&gt; template, with addition of some components from &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://tailwindcss.com"&gt;Tailwind CSS&lt;/a&gt; itself.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Hosting&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Hosting&lt;/h2&gt;
 &lt;p&gt;I'm using &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Images&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Images&lt;/h2&gt;
 &lt;p&gt;Like the blog posts cover images? Find one for yourself on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://unsplash.com"&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
-&lt;p class="pt-5"&gt;
-You can find the source code of this blog on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dolifer/blog"&gt;GitHub&lt;/a&gt;.
-&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Sources&lt;/h2&gt;
+&lt;p&gt;You can find the source code of this blog on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dolifer/blog"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </content>
 		<summary>Thoughts, stories and ideas.</summary>
 	</entry>

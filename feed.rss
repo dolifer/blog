@@ -6,8 +6,8 @@
 		<description>Thoughts, stories and ideas.</description>
 		<copyright>2020</copyright>
 		<managingEditor>Denis Olifer</managingEditor>
-		<pubDate>Sun, 29 Nov 2020 09:28:55 GMT</pubDate>
-		<lastBuildDate>Sun, 29 Nov 2020 09:28:55 GMT</lastBuildDate>
+		<pubDate>Sun, 29 Nov 2020 10:19:04 GMT</pubDate>
+		<lastBuildDate>Sun, 29 Nov 2020 10:19:04 GMT</lastBuildDate>
 		<item>
 			<title>Under the hood</title>
 			<link>https://olifer.org/blog/2020-05-24/under-the-hood</link>
@@ -17,22 +17,21 @@
 			<guid>https://olifer.org/blog/2020-05-24/under-the-hood</guid>
 			<pubDate>Sun, 24 May 2020 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Finally i've got my blog up and running. Again :)&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Building&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5"&gt;Building&lt;/h2&gt;
 &lt;p&gt;Thanks to the following projects who currently use &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://statiq.dev/web"&gt;Statiq Web&lt;/a&gt;:&lt;/p&gt;
 &lt;ul class="list-disc px-8"&gt;
 &lt;li&gt; &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dotnet-foundation/website"&gt;Net Foundation website&lt;/a&gt;&lt;/li&gt; 
 &lt;li&gt;&lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/statiqdev/statiqdev.github.io"&gt;Statiq.dev website&lt;/a&gt;&lt;/li&gt; 
 &lt;/ul&gt;
 &lt;p&gt;Their code was used as a reference for designing this blog.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Theme&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Theme&lt;/h2&gt;
 &lt;p&gt;The resulting design was inspired by &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://www.tailwindtoolbox.com/templates/minimal-blog"&gt;Minimal Blog&lt;/a&gt; template, with addition of some components from &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://tailwindcss.com"&gt;Tailwind CSS&lt;/a&gt; itself.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Hosting&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Hosting&lt;/h2&gt;
 &lt;p&gt;I'm using &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 class="font-semibold text-3xl pt-2"&gt;Images&lt;/h2&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Images&lt;/h2&gt;
 &lt;p&gt;Like the blog posts cover images? Find one for yourself on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://unsplash.com"&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
-&lt;p class="pt-5"&gt;
-You can find the source code of this blog on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dolifer/blog"&gt;GitHub&lt;/a&gt;.
-&lt;/p&gt;
+&lt;h2 class="font-semibold text-3xl pt-5 pb-2"&gt;Sources&lt;/h2&gt;
+&lt;p&gt;You can find the source code of this blog on &lt;a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://github.com/dolifer/blog"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

@@ -5,7 +5,7 @@ Section: "/blog"
 ArchiveSources: "blog/posts/*"
 ArchiveDestination: >
   => GetInt("Index") <= 1 ? $"index.html" : $"archive/{GetInt("Index")}.html"
-ArchivePageSize: 4
+ArchivePageSize: 6
 ArchiveOrderKey: Published
 ArchiveOrderDescending: true
 ArchiveTitle: => GetString("Title")

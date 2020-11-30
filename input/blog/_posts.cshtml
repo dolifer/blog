@@ -23,17 +23,18 @@
     var newer = Document.GetDocument(Keys.Previous);
 
     var firstPost = posts.FirstOrDefault();
-    var list = posts.Skip(1).ToArray();
+    var leadImage = firstPost.GetString("Image");
+    var list = string.IsNullOrWhiteSpace(leadImage) ? posts.ToArray() : posts.Skip(1).ToArray();
 
-    if (firstPost != null)
+    if (firstPost != null && firstPost.GetString("Image") != null)
     {
         var excerpt = GetExcerpt(firstPost);
         <!--Lead Card-->
-        <div class="lg:flex md:flex-1 h-full bg-white rounded rounded-b-none shadow-lg">
-            @if (firstPost.GetString("Image") != null)
+        <div class="lg:flex md:flex-1 h-full bg-white rounded shadow-lg">
+            @if (!string.IsNullOrWhiteSpace(leadImage))
             {
                 <div class="md:w-full lg:w-2/3 rounded-t">
-                    <img src="@firstPost.GetString("Image")" class="h-full w-full shadow"/>
+                    <img src="@leadImage" class="h-full w-full shadow"/>
                 </div>
             }
 
@@ -58,15 +59,15 @@
     @foreach(var post in list)
     {
         var excerpt = GetExcerpt(post);
+        var bgImage = post.GetString("Image");
+        var hasImage = !string.IsNullOrWhiteSpace(bgImage);
+        var bgClass = hasImage ? "bg-cover" : "bg-gradient-to-b from-blue-50 to-blue-200";
+        var bgStyle = hasImage ? $"background-image: url({bgImage})" : "";
     
         <div class="w-full md:w-1/2 lg:w-1/3 lg:p-6 md:p-3 flex flex-col py-4">
-            <div class="flex-1 bg-white rounded rounded-b-none overflow-hidden shadow-lg">
-                @if (post.GetString("Image") != null)
-                {
-                    <div class="md:w-full lg:w-full rounded-t">
-                        <img src="@post.GetString("Image")" class="h-64 w-full rounded-t" />
-                    </div>
-                }
+            <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+                <div class="md:w-full lg:w-full rounded-t h-64 @bgClass" style="@bgStyle">
+                </div>
                 <div class="md:w-full lg:w-full lg:flex flex-col flex-grow flex-shrink px-6 py-4">
                     <div class="w-full font-bold text-xl text-gray-700 truncate">
                         <a itemprop="url" title="@post.GetString("Title")" class="hover:text-gray-900 no-underline hover:underline" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>

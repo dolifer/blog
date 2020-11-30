@@ -6,8 +6,8 @@
 		<description>Thoughts, stories and ideas.</description>
 		<copyright>2020</copyright>
 		<managingEditor>Denis Olifer</managingEditor>
-		<pubDate>Mon, 30 Nov 2020 15:02:05 GMT</pubDate>
-		<lastBuildDate>Mon, 30 Nov 2020 15:02:05 GMT</lastBuildDate>
+		<pubDate>Mon, 30 Nov 2020 19:30:15 GMT</pubDate>
+		<lastBuildDate>Mon, 30 Nov 2020 19:30:15 GMT</lastBuildDate>
 		<item>
 			<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 			<link>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</link>
@@ -16,8 +16,9 @@
 			<guid>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</guid>
 			<pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;CMD + SHIFT + .
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;
+CMD + SHIFT + .
+&lt;/pre&gt;
 &lt;p&gt;Press once to show hidden files and again to hide them. That's all.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

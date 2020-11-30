@@ -7,8 +7,23 @@
 	</author>
 	<link rel="self" href="https://olifer.org/" />
 	<rights>2020</rights>
-	<updated>2020-11-29T10:19:04Z</updated>
+	<updated>2020-11-30T15:02:05Z</updated>
 	<subtitle>Thoughts, stories and ideas.</subtitle>
+	<entry>
+		<id>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</id>
+		<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
+		<author>
+			<name>Denis Olifer</name>
+		</author>
+		<link href="https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x" />
+		<updated>2020-11-30T00:00:00Z</updated>
+		<content>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CMD + SHIFT + .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press once to show hidden files and again to hide them. That's all.&lt;/p&gt;
+</content>
+		<summary>Thoughts, stories and ideas.</summary>
+	</entry>
 	<entry>
 		<id>https://olifer.org/blog/2020-05-24/under-the-hood</id>
 		<title>Under the hood</title>

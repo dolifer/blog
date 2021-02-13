@@ -2,7 +2,7 @@
 Author: Denis Olifer
 Email: denis@olifer.org
 SiteTitle: Denis Olifer
-Description: Thoughts, stories and ideas.
+Description: Thoughts, stories and ideas
 PageTitle: |
   =>
   {
@@ -10,7 +10,8 @@ PageTitle: |
     string title = GetString("Title");
     return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
   }
-PostSources: blog/posts/*
+PostSources: posts/*
+IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
 LinksUseHttps: true
 MirrorResources: true
 EditLink: => "https://github.com/dolifer/blog/edit/master/input/" + doc.Source.GetRelativeInputPath()

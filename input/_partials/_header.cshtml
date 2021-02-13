@@ -1,6 +1,36 @@
-﻿<meta charset="utf-8" />
+﻿@{
+    IDocument rssFeed = Outputs["**/*.rss"].FirstOrDefault();
+    IDocument atomFeed = Outputs["**/*.atom"].FirstOrDefault();
+
+    void RenderMeta(string property, string key, string value = null)
+    {
+        var keyValue = string.IsNullOrWhiteSpace(value) ? Model.GetString(key) : value;
+        
+        if (string.IsNullOrWhiteSpace(keyValue))
+        {
+            return;
+        }
+        
+<meta property="@property" content="@keyValue" />
+    }
+}
+<meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- OpenGraph -->
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="@Document.GetLink(true)" />
+
+@{
+RenderMeta("og:author", "Author");
+RenderMeta("og:title", "Title");
+RenderMeta("og:description", "Description");
+RenderMeta("og:image", "Image");
+RenderMeta("og:image:author", "ImageAuthor");
+RenderMeta("og:image:source", "ImageLink");
+}
+
 @if (Document.ContainsKey(WebKeys.Description))
 {
 <meta name="description" content="@Document.GetString(WebKeys.Description)">
@@ -9,21 +39,23 @@
 {
 <meta name="author" content="@Document.GetString(WebKeys.Author)">
 }
+
 <!-- Feeds -->
-@{
-foreach (var rssFeed in Outputs["**/*.rss"])
+@if (rssFeed != null)
 {
 <link type="application/rss+xml" rel="alternate" title="@rssFeed.GetString(WebKeys.Title)" href="@rssFeed.GetLink()"/>
 }
-foreach (var atomFeed in Outputs["**/*.atom"])
+@if (atomFeed != null)
 {
 <link type="application/atom+xml" rel="alternate" title="@atomFeed.GetString(WebKeys.Title)" href="@atomFeed.GetLink()"/>
 }
-}
+
 <!-- Favicons -->
 <link rel="alternate icon" class="js-site-favicon" type="image/png" href="/img/favicon/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-<!-- Tailwind -->
+
+<!-- Styles -->
 <link href="/css/tailwind.min.css" rel="stylesheet">
+<link href="/css/kbd.css" rel="stylesheet">

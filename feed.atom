@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://olifer.org/</id>
-	<title />
+	<title>Denis Olifer's Blog</title>
 	<author>
-		<name>Denis Olifer</name>
+		<name>denis@olifer.org</name>
 	</author>
 	<link rel="self" href="https://olifer.org/" />
 	<rights>2021</rights>
-	<updated>2021-02-13T18:40:21Z</updated>
+	<updated>2021-02-13T18:54:31Z</updated>
+	<logo>/assets/about/photo.jpg</logo>
 	<subtitle>Thoughts, stories and ideas</subtitle>
 	<entry>
 		<id>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</id>

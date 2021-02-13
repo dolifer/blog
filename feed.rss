@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
-		<title />
+		<title>Denis Olifer's Blog</title>
 		<link>https://olifer.org/</link>
 		<description>Thoughts, stories and ideas</description>
 		<copyright>2021</copyright>
-		<managingEditor>Denis Olifer</managingEditor>
-		<pubDate>Sat, 13 Feb 2021 18:40:21 GMT</pubDate>
-		<lastBuildDate>Sat, 13 Feb 2021 18:40:21 GMT</lastBuildDate>
+		<managingEditor>denis@olifer.org</managingEditor>
+		<pubDate>Sat, 13 Feb 2021 18:54:31 GMT</pubDate>
+		<lastBuildDate>Sat, 13 Feb 2021 18:54:31 GMT</lastBuildDate>
 		<item>
 			<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 			<link>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</link>

@@ -6,13 +6,14 @@
 		<description>Thoughts, stories and ideas</description>
 		<copyright>2021</copyright>
 		<managingEditor>Denis Olifer</managingEditor>
-		<pubDate>Sat, 13 Feb 2021 16:38:18 GMT</pubDate>
-		<lastBuildDate>Sat, 13 Feb 2021 16:38:18 GMT</lastBuildDate>
+		<pubDate>Sat, 13 Feb 2021 18:06:11 GMT</pubDate>
+		<lastBuildDate>Sat, 13 Feb 2021 18:06:11 GMT</lastBuildDate>
 		<item>
 			<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 			<link>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</link>
 			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
+			<enclosure url="https://olifer.org/" length="0" type="image" />
 			<guid>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</guid>
 			<pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut: &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;SHIFT&lt;/kbd&gt; + &lt;kbd&gt;.&lt;/kbd&gt;&lt;/p&gt;

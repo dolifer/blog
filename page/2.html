@@ -1,21 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<title>Denis Olifer - How do you rename a Git tag?</title>
+<title>Denis Olifer</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- OpenGraph -->
 <meta property="og:type" content="blog" />
-<meta property="og:url" content="https://olifer.org/blog/2017-04-19/git-tag-rename" />
+<meta property="og:url" content="https://olifer.org/page/2" />
 
 <meta property="og:author" content="Denis Olifer" />
-<meta property="og:title" content="How do you rename a Git tag?" />
 <meta property="og:description" content="Thoughts, stories and ideas" />
-<meta property="og:image" content="/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" />
-<meta property="og:image:author" content="Brett Jordan" />
-<meta property="og:image:source" content="https://unsplash.com/photos/B9N22h2s0to" />
 
 <meta name="description" content="Thoughts, stories and ideas">
 <meta name="author" content="Denis Olifer">
@@ -72,63 +68,53 @@
 
 <!-- Container -->
 <div class="container w-full flex-grow mx-auto px-2 pt-8 lg:pt-16 mt-16">
-    
-<!-- post header -->
-<div class="container max-w-4xl mx-auto text-center break-normal mb-5">
-	<p class="text-sm md:text-base text-gray-500 font-bold">- <time datetime="19 April 2017" itemprop="datePublished">19 April 2017</time> -</p>
-	<h1 class="font-bold break-normal text-3xl md:text-5xl">How do you rename a Git tag?</h1>
+    <div class="container-sm-height">
+    <div class="row row-sm-height">
+        <div class="col-md-6 right-border col-sm-height">
+            
+        <!--Lead Card-->
+        <div class="lg:flex md:flex-1 h-full bg-white rounded shadow-lg">
+                <div class="md:w-full lg:w-2/3 rounded-t">
+                    <img src="/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" class="h-full w-full shadow"/>
+                </div>
+
+            <div class="md:w-full lg:w-1/3 lg:flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg px-6 py-4">
+                    <div class="font-bold text-xl text-gray-700 truncate">
+                        <a title="How do you rename a Git tag?" class="hover:text-gray-900 no-underline hover:underline" itemprop="url" href="/blog/2017-04-19/git-tag-rename">How do you rename a Git tag?</a>
+                    </div>
+                    <p class="w-full text-gray-400 text-xs md:text-sm mb-2">Published on 2017-04-19</p>
+                    <div class="text-gray-700 text-base">
+                        <p>Here is how I rename a tag <code>old</code> to <code>new</code>: ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Lead Card-->
+
+<!--Posts Container-->
+<div class="md:flex flex-wrap justify-start lg:-mx-6 md:-mx-2 overflow-hidden">
 </div>
-
-    <!-- lead image-->
-    <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg'); height: 75vh;"></div>
-
-<!-- post container -->    
-<div class="bg-white container max-w-5xl mx-auto -mt-32 mb-10 rounded shadow-md">
-    <div class="mx-0 sm:mx-6">
-        <div class="bg-white w-full p-8 text-xl md:text-2xl text-gray-800 leading-normal">
-            <!-- post content -->
-            <p>Here is how I rename a tag <code>old</code> to <code>new</code>:</p>
-<pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2">
-git tag new old
-git tag -d old
-git push origin :refs/tags/old
-git push --tags
-</pre>
-<p>The colon in the push command removes the tag from the remote repository. If you don't do this, git will create the old tag on your machine when you pull.</p>
-<p>Finally, make sure that the other users remove the deleted tag.</p>
-<p>Please tell them(co-workers) to run the following command:</p>
-<pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2">
-git pull --prune --tags
-</pre>
-<p>Source <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="http://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag">StackOverflow</a></p>
+    <div class="w-full flex mb-2 text-blue-500">
+        <div class="w-1/2">
+                <a href="/" class="text-left p-4 float-left hover:text-blue-600">
+                    <p class="text-lg flex items-center"><svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                                         </svg> Newer</p>
+                </a>
+        </div>
+        <div class="w-1/2">
+        </div>
+    </div>
 
         </div>
-        <div class="text-base md:text-sm text-gray-500 px-4 py-6 border-t-2 border-gray-400 border-dotted">Photo by <a href="https://unsplash.com/photos/B9N22h2s0to" target="_blank" class="text-base text-blue-500 md:text-sm hover:text-blue-600 no-underline hover:underline">Brett Jordan</a></div>
+        <div class="col-md-4 mt-4 mt-md-0 col-sm-height">
+            
+            
+
+        </div>
     </div>
 </div>
-
-<script>
-	/* Progress bar */
-	//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-	var h = document.documentElement,
-		  b = document.body,
-		  st = 'scrollTop',
-		  sh = 'scrollHeight',
-		  progress = document.querySelector('#progress'),
-		  scroll;
-	var scrollpos = window.scrollY;
-	var header = document.getElementById("header");
-	var navcontent = document.getElementById("nav-content");
-
-	document.addEventListener('scroll', function() {
-        /*Refresh scroll % width*/
-        scroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-        progress.style.setProperty('--scroll', scroll + '%');
-    
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
-	});
-</script>
 </div>
 
 <!-- Footer -->
@@ -174,7 +160,7 @@ git pull --prune --tags
                                     <svg class="inline-block h-5 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
                                     </svg>
-                                    <a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/posts/git-tag-rename.md"> Edit This Page</a>
+                                    <a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/index.cshtml"> Edit This Page</a>
                                 </p>
                         </li>
                     </ul>

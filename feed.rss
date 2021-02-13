@@ -3,22 +3,19 @@
 	<channel>
 		<title />
 		<link>https://olifer.org/</link>
-		<description>Thoughts, stories and ideas.</description>
-		<copyright>2020</copyright>
+		<description>Thoughts, stories and ideas</description>
+		<copyright>2021</copyright>
 		<managingEditor>Denis Olifer</managingEditor>
-		<pubDate>Mon, 30 Nov 2020 19:30:15 GMT</pubDate>
-		<lastBuildDate>Mon, 30 Nov 2020 19:30:15 GMT</lastBuildDate>
+		<pubDate>Sat, 13 Feb 2021 16:38:18 GMT</pubDate>
+		<lastBuildDate>Sat, 13 Feb 2021 16:38:18 GMT</lastBuildDate>
 		<item>
 			<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 			<link>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<guid>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</guid>
 			<pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:&lt;/p&gt;
-&lt;pre class="bg-gray-800 rounded text-white font-mono text-base p-2 my-2"&gt;
-CMD + SHIFT + .
-&lt;/pre&gt;
+			<content:encoded>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut: &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;SHIFT&lt;/kbd&gt; + &lt;kbd&gt;.&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;Press once to show hidden files and again to hide them. That's all.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -26,7 +23,7 @@ CMD + SHIFT + .
 		<item>
 			<title>Under the hood</title>
 			<link>https://olifer.org/blog/2020-05-24/under-the-hood</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<enclosure url="https://olifer.org/assets/posts/imattsmart-sm0Bkoj5bnA-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2020-05-24/under-the-hood</guid>
@@ -53,7 +50,7 @@ CMD + SHIFT + .
 		<item>
 			<title>// TODO: create a blog</title>
 			<link>https://olifer.org/blog/2020-01-09/todo-create-a-blog</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<enclosure url="https://olifer.org/assets/posts/todo_cover.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2020-01-09/todo-create-a-blog</guid>
@@ -67,7 +64,7 @@ CMD + SHIFT + .
 		<item>
 			<title>Configure SourceTree to stash before pull &amp; unstash after merge</title>
 			<link>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<enclosure url="https://olifer.org/assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</guid>
@@ -95,7 +92,7 @@ git stash pop
 		<item>
 			<title>Updating Assembly Redirects with NuGet</title>
 			<link>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<enclosure url="https://olifer.org/assets/posts/john-lockwood-FcLq69V7Rsc-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</guid>
@@ -118,7 +115,7 @@ git stash pop
 		<item>
 			<title>How do you rename a Git tag?</title>
 			<link>https://olifer.org/blog/2017-04-19/git-tag-rename</link>
-			<description>Thoughts, stories and ideas.</description>
+			<description>Thoughts, stories and ideas</description>
 			<author>Denis Olifer</author>
 			<enclosure url="https://olifer.org/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-04-19/git-tag-rename</guid>

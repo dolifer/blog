@@ -1,26 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
 <title>Denis Olifer - // TODO: create a blog</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Thoughts, stories and ideas.">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="https://olifer.org/blog/2020-01-09/todo-create-a-blog" />
+
+<meta property="og:author" content="Denis Olifer" />
+<meta property="og:title" content="// TODO: create a blog" />
+<meta property="og:description" content="Thoughts, stories and ideas" />
+<meta property="og:image" content="/assets/posts/todo_cover.jpg" />
+<meta property="og:image:author" content="Juan Gomez" />
+<meta property="og:image:source" content="https://unsplash.com/photos/kt-wA0GDFq8" />
+
+<meta name="description" content="Thoughts, stories and ideas">
 <meta name="author" content="Denis Olifer">
+
 <!-- Feeds -->
 <link type="application/rss+xml" rel="alternate" href="/feed.rss"/>
 <link type="application/atom+xml" rel="alternate" href="/feed.atom"/>
+
 <!-- Favicons -->
 <link rel="alternate icon" class="js-site-favicon" type="image/png" href="/img/favicon/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-<!-- Tailwind -->
+
+<!-- Styles -->
 <link href="/css/tailwind.min.css" rel="stylesheet">
+<link href="/css/kbd.css" rel="stylesheet">
 
 </head>
 <body class="bg-gray-100 tracking-wider tracking-normal flex flex-col min-h-screen">
-    <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
+<nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
     <div id="progress" class="h-1 z-20 top-0" style="background: linear-gradient(to right, #3b82f6 var(--scroll), transparent 0); --scroll:0%;"></div>
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
         <div class="pl-4">
@@ -28,7 +44,7 @@
                     Denis Olifer
                 </a>
             <p class="text-gray-500">
-                Thoughts, stories and ideas.
+                Thoughts, stories and ideas
             </p>
         </div>
 
@@ -57,28 +73,26 @@
 <!-- Container -->
 <div class="container w-full flex-grow mx-auto px-2 pt-8 lg:pt-16 mt-16">
     
-<!--Title-->
+<!-- post header -->
 <div class="container max-w-4xl mx-auto text-center break-normal mb-5">
-	<p class="text-sm md:text-base text-gray-500 font-bold">- <time datetime="1/9/2020" itemprop="datePublished">09 January 2020</time> -</p>
+	<p class="text-sm md:text-base text-gray-500 font-bold">- <time datetime="09 January 2020" itemprop="datePublished">09 January 2020</time> -</p>
 	<h1 class="font-bold break-normal text-3xl md:text-5xl">// TODO: create a blog</h1>
 </div>
 
-    <!--image-->
+    <!-- lead image-->
     <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('/assets/posts/todo_cover.jpg'); height: 75vh;"></div>
 
-<!--Container-->    
+<!-- post container -->    
 <div class="bg-white container max-w-5xl mx-auto -mt-32 mb-10 rounded shadow-md">
     <div class="mx-0 sm:mx-6">
         <div class="bg-white w-full p-8 text-xl md:text-2xl text-gray-800 leading-normal">
-            <!--Post Content-->
+            <!-- post content -->
             <p>Will try to make a 2020 a year, when i finally start my blog.</p>
 <p>I'm going to share my thoughts about C#, .NET and various IT stuff.</p>
 <p>Follow me for updates!</p>
 
         </div>
-        <div class="text-base md:text-sm text-gray-500 px-4 py-6 border-t-2 border-gray-400 border-dotted">
-            Photo by <a href="https://unsplash.com/photos/kt-wA0GDFq8" target="_blank" class="text-base text-blue-500 md:text-sm hover:text-blue-600 no-underline hover:underline">Juan Gomez</a>
-        </div>
+        <div class="text-base md:text-sm text-gray-500 px-4 py-6 border-t-2 border-gray-400 border-dotted">Photo by <a href="https://unsplash.com/photos/kt-wA0GDFq8" target="_blank" class="text-base text-blue-500 md:text-sm hover:text-blue-600 no-underline hover:underline">Juan Gomez</a></div>
     </div>
 </div>
 
@@ -112,29 +126,45 @@
         <div class="w-full mx-auto flex flex-wrap">
             <div class="flex w-full lg:w-1/2 ">
                 <div class="px-8">
-                    <h3 class="font-bold text-gray-900">&copy; 2020 Denis Olifer</h3>
+                    <h3 class="font-bold text-gray-900">&copy; 2021 Denis Olifer</h3>
                     <ul class="list-reset items-center text-sm pt-2">
-                    <li>
-                        Generated by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://statiq.dev/web">Statiq Web</a>.
-                    </li>
-                    <li>
-                        Hosted by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
-                    </li>
+                        <li>
+                            Generated by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://statiq.dev/web">Statiq Web</a>.
+                        </li>
+                        <li>
+                            Hosted by <a class="hover:text-blue-600 no-underline text-blue-500 hover:underline" target="_blank" href="https://pages.github.com">GitHub Pages</a>.
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
                 <div class="px-8">
                     <ul class="list-reset items-center text-sm pt-2">
-                        <li>
-                                <p class="small"><a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/commit/2a87bdc5e85a01ed4e8bdd6d47a28ed5c2b42d31" title="2a87bdc5e85a01ed4e8bdd6d47a28ed5c2b42d31">v1.0.9</a></p>
+                         <li>
+                                <p class="small">
+                                    <svg  class="inline-block h-5 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                                    </svg>
+                                    <a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/commit/890c8758f613b479e124dcef299c4ddbcb083f96" title="890c8758f613b479e124dcef299c4ddbcb083f96">v1.0.10</a>
+                                </p>
                         </li>
+                            <li>
+                                <p class="small">
+                                    <svg class="inline-block h-5 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                                    </svg>
+                                    <a target="_blank" class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="/feed.rss" title="View RSS feed"> RSS</a>
+
+                                        <a target="_blank" class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="/feed.atom" title="View Atom feed"> Atom</a>
+                                </p>
+                            </li>
                         <li>
-                            <p class="small"><a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/blog/posts/todo-create-a-blog.md">
-                                <svg class="inline-block h-5 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
-                                </svg> Edit This Page
-                            </a></p>
+                                <p class="small">
+                                    <svg class="inline-block h-5 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                                    </svg>
+                                    <a class="no-underline text-blue-500 hover:text-blue-600 hover:underline" href="https://github.com/dolifer/blog/edit/master/input/posts/todo-create-a-blog.md"> Edit This Page</a>
+                                </p>
                         </li>
                     </ul>
                 </div>

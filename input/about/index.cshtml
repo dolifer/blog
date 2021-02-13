@@ -1,11 +1,11 @@
 ﻿@{
     var facebook_handle = "https://www.facebook.com/DenisOlifer";
-    var twitter_handle = "https://twitter.com/d_olifer";
+    var twitter_handle = "https://twitter.com/"+Document.GetString("TwitterHandle");
     var github_handle = "https://github.com/dolifer";
     var youtube_handle = "https://www.youtube.com/c/DenisOlifer";
 
     var email = Document.GetString("Email");
-    var photoUrl = "/assets/about/photo.jpg";
+    var photoUrl = Document.GetString("AboutPhoto");
 }
 <div class="max-w-4xl flex items-center flex-wrap mx-auto my-16">
     <!--Main Col-->

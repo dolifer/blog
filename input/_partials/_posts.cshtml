@@ -26,7 +26,7 @@
     var leadImage = firstPost.GetString("Image");
     var list = string.IsNullOrWhiteSpace(leadImage) ? posts.ToArray() : posts.Skip(1).ToArray();
 
-    if (firstPost != null && firstPost.GetString("Image") != null)
+    if (firstPost != null && !string.IsNullOrWhiteSpace(leadImage))
     {
         var excerpt = GetExcerpt(firstPost);
         <!--Lead Card-->

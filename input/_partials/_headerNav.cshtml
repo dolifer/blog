@@ -1,7 +1,7 @@
 @{
     var headerLinks = Navigation.GetHeaderLinks(Document);
     var isRootPage = Document.GetLink() == "/";
-    var title = Document.GetString("SiteTitle");
+    var title = Document.GetString("Author");
     var description = Document.GetString(WebKeys.Description);
 }
 <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">

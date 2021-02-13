@@ -1,14 +1,16 @@
 ﻿Host: olifer.org
 Author: Denis Olifer
 Email: denis@olifer.org
-SiteTitle: Denis Olifer
+SiteTitle: Denis Olifer's Blog
+TwitterHandle: d_olifer
+AboutPhoto: "/assets/about/photo.jpg"
 Description: Thoughts, stories and ideas
 PageTitle: |
   =>
   {
     string siteTitle = Context.GetString("SiteTitle");
     string title = GetString("Title");
-    return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
+    return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{title} - {siteTitle}");
   }
 PostSources: posts/*
 IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)

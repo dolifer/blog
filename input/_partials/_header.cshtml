@@ -1,14 +1,26 @@
 ﻿@{
     IDocument rssFeed = Outputs["**/*.rss"].FirstOrDefault();
     IDocument atomFeed = Outputs["**/*.atom"].FirstOrDefault();
-
-    void RenderMeta(string property, string key, string value = null)
+  
+    string GetProperty(string key, string fallbackValue = null)
     {
-        var keyValue = string.IsNullOrWhiteSpace(value) ? Model.GetString(key) : value;
+        var keyValue = Model.GetString(key);
+
+        if (!string.IsNullOrWhiteSpace(keyValue))
+        {
+            return keyValue;
+        }
+        
+        return !string.IsNullOrWhiteSpace(fallbackValue) ? fallbackValue : keyValue;
+    }
+    
+    void RenderMeta(string property, string key, string fallbackValue = null)
+    {
+        var keyValue = GetProperty(key, fallbackValue);
         
         if (string.IsNullOrWhiteSpace(keyValue))
-        {
-            return;
+        {           
+            return;  
         }
         
 <meta property="@property" content="@keyValue" />
@@ -18,27 +30,55 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+@{
+    var author = GetProperty("Author");
+    var twitterHandle = "@"+Document.GetString("TwitterHandle");
+    var keywords = Document.GetString("keywords");
+    var url = @Document.GetLink(true);
+    var title = GetProperty("Title", Document.GetString("SiteTitle"));
+    var description = GetProperty("Description");
+    var image = GetProperty("Image", Document.GetString("AboutPhoto"));
+}
+
 <!-- OpenGraph -->
 <meta property="og:type" content="blog" />
-<meta property="og:url" content="@Document.GetLink(true)" />
+<meta property="og:url" content="@url" />
+
+<meta property="og:author" content="@author" />
+<meta property="og:title" content="@title" />
+<meta property="og:description" content="@description" />
+<meta property="og:image" content="@image" />
 
 @{
-RenderMeta("og:author", "Author");
-RenderMeta("og:title", "Title");
-RenderMeta("og:description", "Description");
-RenderMeta("og:image", "Image");
 RenderMeta("og:image:author", "ImageAuthor");
 RenderMeta("og:image:source", "ImageLink");
 }
 
-@if (Document.ContainsKey(WebKeys.Description))
+<!-- Schema.org -->
+<script type="application/ld+json">
 {
-<meta name="description" content="@Document.GetString(WebKeys.Description)">
+    "@@context": "http://schema.org",
+    "@@type": "BlogPosting",
+    "headline": "@title",
+    "description": "@description",
+    "url": "@url",
+    "image": "@image"
 }
-@if (Document.ContainsKey(WebKeys.Author))
-{
-<meta name="author" content="@Document.GetString(WebKeys.Author)">
-}
+
+</script>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@twitterHandle" />
+<meta name="twitter:creator" content="@twitterHandle" />
+<meta name="twitter:title" content="@title" />
+<meta name="twitter:description" content="@description" />
+<meta name="twitter:image" content="@image" />
+
+<meta name="description" content="@description">
+<meta name="keywords" content="@keywords">
+<meta name="author" content="@author">
+<meta name="copyright" content="@author">
 
 <!-- Feeds -->
 @if (rssFeed != null)

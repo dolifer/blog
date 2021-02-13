@@ -32,12 +32,12 @@
 
 @{
     var author = GetProperty("Author");
-    var twitterHandle = "@"+Document.GetString("TwitterHandle");
+    var twitterHandle = $"@{Document.GetString("TwitterHandle")}";
     var keywords = Document.GetString("keywords");
-    var url = @Document.GetLink(true);
+    var url = Document.GetLink(true);
     var title = GetProperty("Title", Document.GetString("SiteTitle"));
     var description = GetProperty("Description");
-    var image = GetProperty("Image", Document.GetString("AboutPhoto"));
+    var image = $"https://{Document.GetString("Host")}{GetProperty("Image", Document.GetString("AboutPhoto"))}";
 }
 
 <!-- OpenGraph -->

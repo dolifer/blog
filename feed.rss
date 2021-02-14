@@ -5,15 +5,14 @@
 		<link>https://olifer.org/</link>
 		<description>Thoughts, stories and ideas</description>
 		<copyright>2021</copyright>
-		<managingEditor>denis@olifer.org</managingEditor>
-		<pubDate>Sat, 13 Feb 2021 18:54:31 GMT</pubDate>
-		<lastBuildDate>Sat, 13 Feb 2021 18:54:31 GMT</lastBuildDate>
+		<managingEditor>denis@olifer.org (Denis Olifer)</managingEditor>
+		<pubDate>Sun, 14 Feb 2021 09:59:33 GMT</pubDate>
+		<lastBuildDate>Sun, 14 Feb 2021 09:59:33 GMT</lastBuildDate>
 		<item>
 			<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 			<link>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
-			<enclosure url="https://olifer.org/" length="0" type="image" />
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<guid>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</guid>
 			<pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut: &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;SHIFT&lt;/kbd&gt; + &lt;kbd&gt;.&lt;/kbd&gt;&lt;/p&gt;
@@ -25,7 +24,7 @@
 			<title>Under the hood</title>
 			<link>https://olifer.org/blog/2020-05-24/under-the-hood</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<enclosure url="https://olifer.org/assets/posts/imattsmart-sm0Bkoj5bnA-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2020-05-24/under-the-hood</guid>
 			<pubDate>Sun, 24 May 2020 00:00:00 GMT</pubDate>
@@ -52,7 +51,7 @@
 			<title>// TODO: create a blog</title>
 			<link>https://olifer.org/blog/2020-01-09/todo-create-a-blog</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<enclosure url="https://olifer.org/assets/posts/todo_cover.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2020-01-09/todo-create-a-blog</guid>
 			<pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate>
@@ -66,7 +65,7 @@
 			<title>Configure SourceTree to stash before pull &amp; unstash after merge</title>
 			<link>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<enclosure url="https://olifer.org/assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</guid>
 			<pubDate>Thu, 28 Sep 2017 00:00:00 GMT</pubDate>
@@ -94,7 +93,7 @@ git stash pop
 			<title>Updating Assembly Redirects with NuGet</title>
 			<link>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<enclosure url="https://olifer.org/assets/posts/john-lockwood-FcLq69V7Rsc-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</guid>
 			<pubDate>Wed, 20 Sep 2017 00:00:00 GMT</pubDate>
@@ -117,7 +116,7 @@ git stash pop
 			<title>How do you rename a Git tag?</title>
 			<link>https://olifer.org/blog/2017-04-19/git-tag-rename</link>
 			<description>Thoughts, stories and ideas</description>
-			<author>Denis Olifer</author>
+			<author>denis@olifer.org (Denis Olifer)</author>
 			<enclosure url="https://olifer.org/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" length="0" type="image" />
 			<guid>https://olifer.org/blog/2017-04-19/git-tag-rename</guid>
 			<pubDate>Wed, 19 Apr 2017 00:00:00 GMT</pubDate>

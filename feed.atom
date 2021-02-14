@@ -3,21 +3,20 @@
 	<id>https://olifer.org/</id>
 	<title>Denis Olifer's Blog</title>
 	<author>
-		<name>denis@olifer.org</name>
+		<name>denis@olifer.org (Denis Olifer)</name>
 	</author>
 	<link rel="self" href="https://olifer.org/" />
 	<rights>2021</rights>
-	<updated>2021-02-13T18:54:31Z</updated>
+	<updated>2021-02-14T09:59:33Z</updated>
 	<logo>/assets/about/photo.jpg</logo>
 	<subtitle>Thoughts, stories and ideas</subtitle>
 	<entry>
 		<id>https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x</id>
 		<title>The Quickest Way to Show/Hide Hidden Files in OS X</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2020-11-30/quickly-showhide-hidden-files-mac-os-x" />
-		<link rel="enclosure" type="image" href="https://olifer.org/" />
 		<updated>2020-11-30T00:00:00Z</updated>
 		<content>&lt;p&gt;Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut: &lt;kbd&gt;CMD&lt;/kbd&gt; + &lt;kbd&gt;SHIFT&lt;/kbd&gt; + &lt;kbd&gt;.&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;Press once to show hidden files and again to hide them. That's all.&lt;/p&gt;
@@ -28,7 +27,7 @@
 		<id>https://olifer.org/blog/2020-05-24/under-the-hood</id>
 		<title>Under the hood</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2020-05-24/under-the-hood" />
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/imattsmart-sm0Bkoj5bnA-unsplash.jpg" />
@@ -56,7 +55,7 @@
 		<id>https://olifer.org/blog/2020-01-09/todo-create-a-blog</id>
 		<title>// TODO: create a blog</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2020-01-09/todo-create-a-blog" />
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/todo_cover.jpg" />
@@ -71,7 +70,7 @@
 		<id>https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after</id>
 		<title>Configure SourceTree to stash before pull &amp; unstash after merge</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2017-09-28/configure-source-tree-stash-before-pull-unstash-after" />
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/yancy-min-842ofHC6MaI-unsplash.jpg" />
@@ -100,7 +99,7 @@ git stash pop
 		<id>https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget</id>
 		<title>Updating Assembly Redirects with NuGet</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2017-09-20/updating-assembly-redirects-with-nuget" />
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/john-lockwood-FcLq69V7Rsc-unsplash.jpg" />
@@ -124,7 +123,7 @@ git stash pop
 		<id>https://olifer.org/blog/2017-04-19/git-tag-rename</id>
 		<title>How do you rename a Git tag?</title>
 		<author>
-			<name>Denis Olifer</name>
+			<name>denis@olifer.org (Denis Olifer)</name>
 		</author>
 		<link href="https://olifer.org/blog/2017-04-19/git-tag-rename" />
 		<link rel="enclosure" type="image" href="https://olifer.org/assets/posts/brett-jordan-B9N22h2s0to-unsplash.jpg" />

@@ -6,5 +6,6 @@ FeedSize: 10
 FeedRss: true
 FeedAtom: true
 FeedTitle: => GetString("SiteTitle")
-FeedAuthor: => GetString("Email")
+FeedAuthor: => GetString("FeedEmail")
+FeedItemAuthor: => GetString("FeedEmail")
 FeedImageLink: => GetString("AboutPhoto")

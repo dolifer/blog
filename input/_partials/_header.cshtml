@@ -1,23 +1,11 @@
 ﻿@{
     IDocument rssFeed = Outputs["**/*.rss"].FirstOrDefault();
     IDocument atomFeed = Outputs["**/*.atom"].FirstOrDefault();
-  
-    string GetProperty(string key, string fallbackValue = null)
-    {
-        var keyValue = Model.GetString(key);
 
-        if (!string.IsNullOrWhiteSpace(keyValue))
-        {
-            return keyValue;
-        }
-        
-        return !string.IsNullOrWhiteSpace(fallbackValue) ? fallbackValue : keyValue;
-    }
-    
-    void RenderMeta(string property, string key, string fallbackValue = null)
+    void RenderMeta(string property, string keyName, string fallbackKeyName = null)
     {
-        var keyValue = GetProperty(key, fallbackValue);
-        
+        var keyValue = Document.GetProperty(keyName, fallbackKeyName);
+
         if (string.IsNullOrWhiteSpace(keyValue))
         {           
             return;  
@@ -31,13 +19,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 @{
-    var author = GetProperty("Author");
+    var author = Document.GetProperty("Author");
     var twitterHandle = $"@{Document.GetString("TwitterHandle")}";
     var keywords = Document.GetString("keywords");
     var url = Document.GetLink(true);
-    var title = GetProperty("Title", Document.GetString("SiteTitle"));
-    var description = GetProperty("Description");
-    var image = $"https://{Document.GetString("Host")}{GetProperty("Image", Document.GetString("AboutPhoto"))}";
+    var title = Document.GetProperty("Title", "SiteTitle");
+    var description = Document.GetProperty("Description");
+    var image = $"https://{Document.GetString("Host")}{Document.GetProperty("Image", "AboutPhoto")}";
 }
 
 <!-- OpenGraph -->

@@ -16,8 +16,8 @@
         <div class="text-base md:text-sm text-gray-500 px-4 py-6 border-t-2 border-gray-400 border-dotted">Photo by <a href="@imageLink" target="_blank" class="text-base text-blue-500 md:text-sm hover:text-blue-600 no-underline hover:underline">@imageAuthor</a></div>
     }
 
-    var image = Model.GetString("Image");
-    var hasImage = !string.IsNullOrWhiteSpace(image);
+    var leadImage = Model.GetLeadImage();
+    var hasImage = !string.IsNullOrWhiteSpace(leadImage);
     var containerClass = hasImage ? "-mt-32" : "";
     var datePublished = Model.GetDateTime("Published").ToString("dd MMMM yyyy", CultureInfo.InvariantCulture);
 }
@@ -31,7 +31,7 @@
 @if (hasImage)
 {
     <!-- lead image-->
-    <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('@image'); height: 75vh;"></div>
+    <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('@leadImage'); height: 75vh;"></div>
 }
 
 <!-- post container -->    
